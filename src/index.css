@@ -8,6 +8,10 @@
     src: url('data-base64:~assets/fonts/Ubuntu-Regular.ttf');
 }
 
+.social-links {
+    @apply hover:drop-shadow-[0_10px_10px_rgba(0,0,0,0.50)]
+}
+
 .nav-bar-menu-item {
     @apply text-white hover:bg-indigo-800 rounded-full px-5 py-2 text-xl
 }
@@ -23,3 +27,9 @@
 .dynamic-fill-color-2{
     @apply text-slate-600 dark:text-slate-400 hover:text-blue-500 dark:hover:text-white transition-colors duration-500 ease-in-out
 }
+
+hr {
+    height: 1px;
+    background: linear-gradient(to right, #dddddd, rgba(255, 255, 255, 0) );
+    border: none;
+  }
