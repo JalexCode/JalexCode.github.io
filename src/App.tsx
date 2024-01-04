@@ -1,13 +1,9 @@
-import NavBar from './components/header/NavBar'
+import Main from './components/Main'
 
 function App() {
-  
+
   return (
-    <>
-      <div>
-        <NavBar />
-      </div>
-    </>
+    <Main/>
   )
 }
 
