@@ -2,7 +2,7 @@
 export default {
   content: ["./**/*.tsx"],
   theme: {
-    screen: {
+    screens: {
       ssm:'375px',
       sm:'640px',
       md:'768px',
