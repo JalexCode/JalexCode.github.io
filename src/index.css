@@ -5,7 +5,7 @@
 
 @font-face {
     font-family: 'Ubuntu';
-    src: url('data-base64:~assets/fonts/Ubuntu-Regular.ttf');
+    src: url('/src/assets/fonts/Ubuntu-Regular.ttf') format('truetype');
 }
 
 .social-links {
