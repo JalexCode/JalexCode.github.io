@@ -4,12 +4,16 @@ export default {
   darkMode: "class",
   theme: {
     screens: {
-      ssm:'375px',
-      sm:'640px',
-      md:'768px',
-      lg:'1024px',
+      ssm: '375px',
+      sm: '640px',
+      md: '768px',
+      lg: '1024px',
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        'sans': ['Ubuntu'],
+      },
+    },
   },
   plugins: [],
 }
