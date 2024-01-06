@@ -25,6 +25,10 @@
     @apply bg-transparent hover:bg-indigo-800 transition-colors duration-500 ease-in-out rounded-full px-5 py-2 text-xl text-white
 }
 
+.tag-badges {
+    @apply text-center rounded-2xl bg-slate-200 hover:bg-slate-500 text-slate-500 hover:text-slate-200 transition-colors duration-300 ease-in-out text-base px-2 py-1
+}
+
 .dynamic-fill-color {
     @apply text-white dark:text-slate-400 hover:text-blue-300 dark:hover:text-white transition-colors duration-500 ease-in-out
 }
@@ -34,11 +38,11 @@
 }
 
 .card {
-    @apply bg-white rounded-3xl my-4 mx-20 p-10 drop-shadow-2xl text-gray-800
+    @apply bg-white rounded-3xl p-10 drop-shadow-2xl text-gray-800
 }
 
 .project-card {
-    @apply flex bg-white rounded-3xl drop-shadow-2xl justify-start items-start
+    @apply flex bg-white rounded-3xl justify-start items-start
 }
 
 hr {
@@ -48,7 +52,7 @@ hr {
 }
 
 .sections-title {
-    @apply text-5xl font-bold text-gray-700 text-center
+    @apply text-5xl font-bold text-gray-700 text-center mb-10
 }
 
 @keyframes fadeInUp {
@@ -64,5 +68,9 @@ hr {
 }
 
 .animate-fadeInUp {
-    animation: fadeInUp 0.5s ease-out forwards;
+    animation: fadeInUp 1s ease-out forwards;
 }
+
+.hover-trigger:hover .hover-target {
+    transform: scale(1.25);
+  }
