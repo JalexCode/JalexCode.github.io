@@ -1,19 +1,19 @@
 import SkillItem from "./SkillItem";
 import skillGroups from "../data/skills";
 import React from "react";
-import Lottie from 'lottie-react'
-import devAnimation from '../assets/lotties/front-end-lottie-blue.json';
+// import Lottie from 'lottie-react'
+// import devAnimation from '../assets/lotties/front-end-lottie-blue.json';
 
 const Skills = () => {
   return (
     <section className="-mt-60 mb-28">
-      <div className="card">
+      <div className="card my-4 mx-20">
         <div className="text-center">
           <div >
             <h2 className="sections-title">Skills</h2>
           </div>
 
-          <div className="flex w-full space-x-10 justify-center mt-10">
+          <div className="flex w-full space-x-10 justify-center">
 
             {skillGroups.map((group, index) => (
               <React.Fragment key={index}>
