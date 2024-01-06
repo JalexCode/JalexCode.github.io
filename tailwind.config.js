@@ -13,6 +13,15 @@ export default {
       fontFamily: {
         'sans': ['Ubuntu'],
       },
+      keyframes: {
+        moveUp: {
+          '0%': { transform: 'translateY(1rem)' },
+          '100%': { transform: 'translateY(0rem)' },
+        },
+      },
+      animation: {
+        moveUp: 'moveUp 2s',
+      },
     },
   },
   plugins: [],
