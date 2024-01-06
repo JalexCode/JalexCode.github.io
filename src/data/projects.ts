@@ -12,7 +12,7 @@ You can get the code [here](https://github.com/JalexCode/blue-pos).
 
 const Apklis4DevsDescription =
 `
-**Apklis4Devs** is a client application for Android that shows the user in a friendly way useful information about their [Apklis Developer] (https://admin.apklis.cu/login) account.
+**Apklis4Devs** is a client application for Android that shows the user in a friendly way useful information about their [Apklis Developer](https://admin.apklis.cu/login) account.
 `;
 
 const RubieraDescription =
@@ -26,8 +26,10 @@ const projects: Array<Project> = [
         markdownDescription: VisualesUclvExplorerDescription,
         iconPath: '/images/visuales.png',
         usedTechs: [
+            "Desktop",
             "Python",
             "PyQt5",
+            "Android",
             "Java",
         ],
         screenShots: [
@@ -42,6 +44,7 @@ const projects: Array<Project> = [
         markdownDescription: Apklis4DevsDescription,
         iconPath: '/images/apklis4devs.png',
         usedTechs: [
+            "Android",
             "Java",
             "Retrofit",
         ],
@@ -57,6 +60,8 @@ const projects: Array<Project> = [
         markdownDescription: ACuantoEstaDescription,
         iconPath: '/images/a-cuanto-esta.png',
         usedTechs: [
+            "Browser",
+            "Extension",
             "React",
             "TypeScript",
             "Plasmo",
@@ -72,8 +77,10 @@ const projects: Array<Project> = [
         markdownDescription: RubieraDescription,
         iconPath: '/images/rubiera.png',
         usedTechs: [
+            "Desktop",
             "Python",
             "PyQt5",
+            "WebScrapping"
         ],
         screenShots: [
             '/images/screenshots/rubiera/1.png'
