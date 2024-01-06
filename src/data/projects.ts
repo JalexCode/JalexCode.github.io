@@ -1,23 +1,18 @@
 const ACuantoEstaDescription =
 `
 **¿A cuánto está?** is a browser extension that will show you the current exchange value of the Dollar, Euro and MLC in Cuba.
-If you wish to contribute to the project you can do it [here](https://github.com/R0land013/dev-links).
+If you wish to contribute to this project you can do it [here](https://github.com/JalexCode/dev-links).
 `;
 
 const VisualesUclvExplorerDescription =
 `
 **VisualesUCLV** are a desktop and Android applications that allows the user to explore the content of the Cuban ftp http://visuales.uclv.cu.
-
-If you are interested in knowing more about it or want to contribute, click
-[here](https://github.com/R0land013/blue-pos).
+You can get the code [here](https://github.com/JalexCode/blue-pos).
 `;
 
 const Apklis4DevsDescription =
 `
-**Apklis4Devs** is a client application for Android that shows the user in a friendly way useful information about their Apklis Developer account. Apklis is a Cuban Android application hosting platform.
-
-If you want to know more about this app or contribute to the project go to see
-the [repo](https://github.com/R0land013/blue-nauta).
+**Apklis4Devs** is a client application for Android that shows the user in a friendly way useful information about their [Apklis Developer] (https://admin.apklis.cu/login) account.
 `;
 
 const RubieraDescription =
