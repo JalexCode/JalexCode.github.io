@@ -1,15 +1,16 @@
-import React from 'react'
 import NavBar from './NavBar'
 import Hero from './Hero'
 import Skills from './Skills'
+import Projects from './Projects'
 
 const Main = () => {
     return (
-        <div className='bg-indigo-600'>
+        <div>
             <NavBar />
-            <div className='pt-20'>
+            <div>
                 <Hero />
                 <Skills />
+                <Projects/>
             </div>
         </div>
     )
