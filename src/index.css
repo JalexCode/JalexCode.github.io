@@ -72,5 +72,6 @@ hr {
 }
 
 .hover-trigger:hover .hover-target {
-    transform: scale(1.25);
+    /* transform: scale(1.25); */
+    @apply scale-125 -translate-x-2 -translate-y-2
   }
