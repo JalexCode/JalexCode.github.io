@@ -4,27 +4,24 @@ export type ExperienceType = {
     workName: string;
     workingPeriod: string;
     place: string;
+    time: string;
     role: string;
     description: string;
+    webLink: string;
+    image?:string;
 };
 
 
 export const experience: Array<ExperienceType> = [
-    
     {
-        workName: 'Ewall Insurance Company',
-        workingPeriod: 'Nov 2022 - Jul 2023',
-        place: 'Remote - part time',
-        role: 'Software Developer',
-        description: 'Working in a Scrum team. Using React Native and AWS technologies.'
-    },
-
-    {
-        workName: 'University of Camagüey Ignacio Agramonte Loynaz',
-        workingPeriod: 'Jan 2023 - Nov 2023',
-        place: 'Camagüey, Cuba - full time',
+        workName: 'University of Camagüey',
+        workingPeriod: 'Jan 2023 - Now',
+        place: 'Camagüey, Cuba',
+        time: 'Full',
         role: 'Professor',
-        description: 'Teaching Web Programming and Mathematical Logic to the students of the Faculty of Informatics and Exact Sciences. Fulfilling tasks of the Department of Informatics of the faculty and participating in research projects.'
+        description: 'Teaching Programming Language and Data Structures to the students of the Faculty of Informatics and Exact Sciences. Fulfilling tasks of the Department of Informatics of the faculty and participating in research projects.',
+        webLink: "https://www.reduc.edu.cu/",
+        image: "/images/uc-logo.png",
     },
 ];
 
