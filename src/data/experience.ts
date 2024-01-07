@@ -9,6 +9,7 @@ export type ExperienceType = {
     description: string;
     webLink: string;
     image?:string;
+    skills: Array<string>,
 };
 
 
@@ -19,9 +20,17 @@ export const experience: Array<ExperienceType> = [
         place: 'Camagüey, Cuba',
         time: 'Full',
         role: 'Professor',
-        description: 'Teaching Programming Language and Data Structures to the students of the Faculty of Informatics and Exact Sciences. Fulfilling tasks of the Department of Informatics of the faculty and participating in research projects.',
+        description: 'Teaching Programming Language and Data Structures to the students of the Faculty of Informatics and Exact Sciences. Accomplishing the responsibilities assigned to the Department of Informatics within the university and contributing to ongoing research initiatives.',
         webLink: "https://www.reduc.edu.cu/",
         image: "/images/uc-logo.png",
+        skills: [
+            "Teaching",
+            "Data Structures",
+            "Java",
+            "Python",
+            "Research",
+            "Data Science",
+        ],
     },
 ];
 
