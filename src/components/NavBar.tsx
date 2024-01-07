@@ -1,6 +1,6 @@
 import { AiOutlineClose } from 'react-icons/ai'
 import JalexCode from '../assets/jalex.png'
-import Link from 'react-scroll'
+// import { useState } from 'react';
 
 interface Sections {
   title:string,
@@ -20,12 +20,14 @@ const NavBar = () => {
       section.scrollIntoView({ behavior: 'smooth' });
     }
   };
+
+  // const [currentSection, setCurrentSection] = useState<string>(items[0].id)
   return (
     <>
       <nav className='fixed bg-indigo-600 px-10 py-5 ssm:space-y-4 w-full backdrop-filter backdrop-blur-lg bg-opacity-50 z-50'>
         <div className="flex justify-between items-center">
           {/* Javier Alejandro */}
-          <div className="text-white font-mono text-3xl flex items-center">
+          <div onClick={() => scrollToSection(items[0].id)} className="text-white font-mono text-3xl flex items-center cursor-pointer">
             <img src={JalexCode} alt='JalexCode' width={250} />
           </div>
           {/* Menu Bar */}
@@ -43,7 +45,7 @@ const NavBar = () => {
         <div className="flex justify-between ssm:block lg:hidden">
           <ul>
             {items.map((element, index) => (
-              <li key={index} className="text-white hover:bg-indigo-800 ">{element}</li>
+              <li key={index} className="text-white hover:bg-indigo-800 ">{element.title}</li>
             ))}
           </ul>
         </div>
