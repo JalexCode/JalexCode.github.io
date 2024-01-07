@@ -3,6 +3,7 @@ import Hero from './Hero'
 import Skills from './Skills'
 import Projects from './Projects'
 import Experience from './Experience'
+import Footer from './Footer'
 
 const Main = () => {
     return (
@@ -11,8 +12,9 @@ const Main = () => {
             <div>
                 <Hero />
                 <Skills />
-                <Projects/>
-                <Experience/>
+                <Projects />
+                <Experience />
+                <Footer />
             </div>
         </div>
     )
