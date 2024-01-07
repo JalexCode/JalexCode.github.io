@@ -1,5 +1,5 @@
 import { BsFacebook, BsInstagram, BsTelegram, BsGithub, BsLinkedin, BsEnvelopeAtFill } from 'react-icons/bs'
-import HeroPic from '../assets/avatar.jpg'
+import HeroPic from '/avatar.jpg'
 import Lottie from 'lottie-react'
 import reactAnimation from '../assets/lotties/react.json';
 
@@ -17,6 +17,7 @@ const Hero = () => {
                             className='opacity-20'
                         />
                     </div>
+                    
                     <div className='relative z-1'>
                         <p className='text-4xl text-slate-300 mb-4'>Hello there!👋 I'm </p>
                         <h1 className='text-white text-6xl'>Javier Alejandro</h1>
