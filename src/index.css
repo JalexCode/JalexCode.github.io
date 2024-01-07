@@ -10,7 +10,7 @@
 
 .social-links {
     /* @apply hover:drop-shadow-[0_10px_10px_rgba(0, 0, 0, 0.70)] */
-    @apply hover:drop-shadow-md
+    @apply transition-all hover:scale-125
 }
 
 .nav-bar-menu-item {
@@ -21,8 +21,8 @@
     @apply flex w-full justify-start space-x-4 items-center rounded-lg bg-transparent hover:bg-indigo-100 transition-colors duration-300 ease-in-out px-2 py-2 cursor-pointer
 }
 
-.dynamic-bg-button {
-    @apply bg-transparent hover:bg-indigo-800 transition-colors duration-500 ease-in-out rounded-full px-5 py-2 text-xl text-white
+.menu-item {
+    @apply bg-transparent hover:bg-indigo-800 transition-all duration-500 ease-in-out rounded-full px-5 py-2 text-xl text-white cursor-pointer
 }
 
 .tag-badges {
@@ -84,3 +84,23 @@ hr {
   .hover-trigger:hover .hover-bottom-bar-target {
     height: 2.5rem; /* Ajusta la altura según tus necesidades */
   }
+
+.hover-trigger:hover .tag-title{
+    @apply transition-opacity hover:opacity-100
+}
+
+@keyframes fadeInUpRight {
+    from {
+        opacity: 0;
+        transform: translateY(30px) translateX(-50px);
+    }
+
+    to {
+        opacity: 0.6;
+        transform: translateY(0) translateX(0);
+    }
+}
+
+.rocket {
+    animation: fadeInUpRight 1s ease-out infinite;
+}
