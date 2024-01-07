@@ -27,7 +27,7 @@ export const socialLinks: Array<SocialLinksType> = [
     {
         icon: BsLinkedin,
         title: "Let's connect!",
-        url: 'https://github.com/JalexCode',
+        url: 'https://www.linkedin.com/in/javier-alejandro-gonz%C3%A1lez-casellas-050882181/',
     },
     {
         icon: BsFacebook,
