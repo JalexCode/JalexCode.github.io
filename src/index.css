@@ -71,7 +71,16 @@ hr {
     animation: fadeInUp 1s ease-out forwards;
 }
 
+/* .hover-trigger:hover {
+    /*height: calc(100% + 2.5rem); /* Altura original del card más la altura de la barra 
+    padding-bottom: 3rem;
+  } */
+  
 .hover-trigger:hover .hover-target {
     /* transform: scale(1.25); */
     @apply scale-125 -translate-x-2 -translate-y-2
+  }
+
+  .hover-trigger:hover .hover-bottom-bar-target {
+    height: 2.5rem; /* Ajusta la altura según tus necesidades */
   }
