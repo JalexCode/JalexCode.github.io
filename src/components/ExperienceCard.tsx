@@ -1,5 +1,4 @@
 import { ExperienceType } from '../data/experience'
-import UCLogo from '/images/uc-logo.png'
 
 interface ExperienceCardProps {
     experience: ExperienceType;
@@ -7,7 +6,7 @@ interface ExperienceCardProps {
 
 const ExperienceCard = ({ experience }: ExperienceCardProps) => {
     return (
-        <div className="rounded-3xl shadow-2xl w-fit">
+        <div className="rounded-3xl shadow-2xl w-fit transition-all hover:scale-105 hover:shadow-black">
             <div className="h-36 rounded-tr-3xl rounded-tl-3xl shadow-xl" style={{ backgroundColor: "rgb(20, 124, 244)" }}>
                 <div className="flex justify-center items-center flex-col">
                     <a target="_blank" href={experience.webLink}>
@@ -19,15 +18,21 @@ const ExperienceCard = ({ experience }: ExperienceCardProps) => {
                 </div>
             </div>
             <div className="p-6 mt-14 flex justify-center items-center flex-col">
-                <h2 className="text-3xl opacity-70 mb-2 text-center">{experience.role}</h2>
-                <h2 className="mb-2 opacity-100">{experience.place}</h2>
-                <div className="flex justify-center flex-col">
-                    <p className="text-center">{experience.workingPeriod}</p>
-                </div>
-                <p className="mt-5 pl-2 pr-2 hidden lg:flex opacity-70">
+                <h2 className="text-3xl opacity-70 mb-2 text-center font-bold">{experience.role}</h2>
+                <h2 className="mb-2 text-slate-600">{experience.place}</h2>
+                <p className="text-center text-slate-600">{experience.workingPeriod}</p>
+                <p className="mt-5 px-2 hidden lg:flex opacity-70">
                     {experience.description}
                 </p>
+                <div className='mt-8 bottom-0 '>
+                    <div className='flex flex-wrap gap-2'>
+                        {experience.skills.map((skill, index) => (
+                            <div key={index} className='tag-badges'>{skill}</div>
+                        ))}
+                    </div>
+                </div>
             </div>
+
         </div>
     )
 }
