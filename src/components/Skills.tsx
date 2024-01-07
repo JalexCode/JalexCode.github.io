@@ -1,12 +1,13 @@
 import SkillItem from "./SkillItem";
 import skillGroups from "../data/skills";
 import React from "react";
-// import Lottie from 'lottie-react'
-// import devAnimation from '../assets/lotties/front-end-lottie-blue.json';
+import Lottie from 'lottie-react'
+import frontEndDevAnimation from '../assets/lotties/front-end-lottie-purple.json';
+// import rocketAnimation from '../assets/lotties/rocket-purple.json';
 
 const Skills = () => {
   return (
-    <section className="-mt-60 mb-28">
+    <section id="skills" className="-mt-60 mb-28 pt-28">
       <div className="card my-4 mx-20">
         <div className="text-center">
           <div >
@@ -36,17 +37,15 @@ const Skills = () => {
               </React.Fragment>
             ))}
           </div>
-          {/* <div className='absolute z-2'>
-            <Lottie
-              loop={true}
-              autoplay={true}
-              animationData={devAnimation}
-              className='opacity-20'
-              width={200}
-              height={200}
-            />
-          </div> */}
+          <Lottie
+            loop={true}
+            autoplay={true}
+            animationData={frontEndDevAnimation}
+            className='opacity-40 mb-5 mr-5'
+            style={{ width: '200px', bottom:0, right: 0, position:"absolute"}}
+        />
         </div>
+        
       </div>
     </section>
   );
