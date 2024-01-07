@@ -6,7 +6,7 @@ interface ProjectCardProps {
 
 const ProjectCard = ({ project }: ProjectCardProps) => {
     return (
-        <div className='z-1 project-card justify-around p-5 hover-trigger transition-all hover:scale-105 shadow-2xl hover:shadow-4xl '>
+        <div className='z-1 project-card justify-around p-5 hover-trigger transition-all hover:scale-105 shadow-2xl hover:shadow-4xl'>
             <div className='flex flex-shrink-0 mr-4'>
                 <img src={project.iconPath} className='h-24 min-h-24 object-cover transition-all hover-target' />
             </div>
