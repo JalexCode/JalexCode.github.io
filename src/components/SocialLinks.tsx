@@ -2,7 +2,7 @@ import { socialLinks, SocialLinksType } from '../data/personalInfo'
 
 const SocialLinks = () => {
     return (
-        <div className='flex mt-10 space-x-4 cursor-pointer'>
+        <div className='flex space-x-4 cursor-pointer'>
             {socialLinks.map((socialLink: SocialLinksType, index: number) => (
                 <a key={index} href={socialLink.url} className='bg-transparent'>
                     {socialLink.icon({size:32, title: socialLink.title, className: "social-links"})}
