@@ -1,16 +1,19 @@
 import SocialLinks from "./SocialLinks";
 
-function getCurrentYear():string {
-    const now = new Date();
-    const year:string = String(now.getFullYear()); 
-    return year;
-  }
-  
+function getCurrentYear(): string {
+  const now = new Date();
+  const year: string = String(now.getFullYear());
+  return year;
+}
+
 
 const Footer = () => {
   return (
-    <div className="flex flex-col bg-indigo-600 p-2 w-full justify-center items-center space-y-4 text-white">
-      <SocialLinks/>    
+    <div className="flex bg-indigo-600 p-8 h-fit w-full justify-between items-center text-white relative">
+      <div className="justify-start items-start">
+        <div className="text-sm font-bold mb-2">Contact me!</div>
+        <SocialLinks />
+      </div>
       <div>Copyright © {getCurrentYear()} - Todos los derechos reservados</div>
     </div>
   )
