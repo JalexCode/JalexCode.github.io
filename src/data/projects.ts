@@ -1,13 +1,11 @@
 const ACuantoEstaDescription =
 `
 **¿A cuánto está?** is a browser extension that will show you the current exchange value of the Dollar, Euro and MLC in Cuba.
-If you wish to contribute to this project you can do it [here](https://github.com/JalexCode/dev-links).
 `;
 
 const VisualesUclvExplorerDescription =
 `
 **VisualesUCLV** are a desktop and Android applications that allows the user to explore the content of the Cuban ftp http://visuales.uclv.cu.
-You can get the code [here](https://github.com/JalexCode/blue-pos).
 `;
 
 const Apklis4DevsDescription =
