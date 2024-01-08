@@ -16,7 +16,7 @@ const Hero = () => {
                             className='opacity-20'
                         />
                     </div>
-                    
+
                     <div className='relative z-1'>
                         <p className='text-4xl text-slate-300 mb-4'>Hello there!👋 I'm </p>
                         <h1 className='text-white text-6xl'>{personalInfo.name}</h1>
@@ -24,7 +24,9 @@ const Hero = () => {
                         <p className='text-xl mt-10 text-slate-300 font-sans'>
                             {personalInfo.aboutMe}
                         </p>
-                        <SocialLinks/>
+                        <div className='mt-10 '>
+                            <SocialLinks />
+                        </div>
                     </div>
 
                 </div>
