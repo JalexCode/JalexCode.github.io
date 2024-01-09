@@ -57,7 +57,7 @@ const NavBar = () => {
         {toggleMenu ? (<div className="flex justify-between ssm:block lg:hidden">
           <ul className='space-y-2'>
             {items.map((element, index) => (
-              <li key={index} className="menu-list-item">{element.title}</li>
+              <li key={index} className="menu-list-item" onClick={() => scrollToSection(element.id)}>{element.title}</li>
             ))}
           </ul>
         </div>) : ""}
