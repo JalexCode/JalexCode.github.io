@@ -4,7 +4,7 @@ import SocialLinks from './SocialLinks';
 import { personalInfo } from '../data/personalInfo';
 const Hero = () => {
     return (
-        <section id="aboutme" className='bg-indigo-600 lg:pt-48 ssm:pt-28 pb-96 '>
+        <section id="aboutme" className='bg-indigo-600 lg:pt-48 ssm:pt-28 pb-60'>
             <div className='flex justify-around items-center px-10 ssm:pt-10 lg:space-x-10 lg:flex-row ssm:flex-col-reverse text-white animate-moveUp'>
                 {/* About Me */}
                 <div className='w-1/2 ssm:w-fit ssm:items-center ssm:justify-center z-10'>
@@ -35,7 +35,7 @@ const Hero = () => {
                 </div>
                 {/* My picture */}
                 <div className='w-1/2 ssm:w-full justify-center items-center lg:mb-0 ssm:mb-5 z-40'>
-                    <img src={personalInfo.heroPic} loading='lazy' alt='JalexCode Picture' width={250} height={250} className='rounded-full w-full border-8 border-white' />
+                    <img decoding="async" data-nimg="1" src={personalInfo.heroPic} loading='lazy' alt='JalexCode Picture' width={250} height={250} className='rounded-full w-full border-8 border-white' />
                 </div>
             </div>
         </section>
