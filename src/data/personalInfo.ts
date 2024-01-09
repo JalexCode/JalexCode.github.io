@@ -37,7 +37,7 @@ export const socialLinks: Array<SocialLinksType> = [
     {
         icon: BsInstagram,
         title: 'See my posts',
-        url: 'https://instagram.com/javieroasismusic',
+        url: 'https://instagram.com/jalexoasismusic',
     },
     {
         icon: BsTelegram,
