@@ -24,6 +24,7 @@ const NavBar = () => {
 
   // const [currentSection, setCurrentSection] = useState<string>(items[0].id)
   const [toggleMenu, setToggleMenu] = useState<boolean>(false)
+  const [isDarkMode, setDarkMode] = useState<boolean>(false)
   return (
     <>
       <nav className='bg-indigo-600 px-10 py-5 ssm:py-10 ssm:space-y-4 h-fit w-screen ssm:w-screen max-w-screen-xl backdrop-filter backdrop-blur-lg bg-opacity-50 z-50 fixed'>
@@ -46,7 +47,9 @@ const NavBar = () => {
                   <a key={index} className="menu-item" onClick={() => scrollToSection(element.id)}>{element.title}</a>
                 ))}
               </div>
-              <MdNightlight size={30} className="navbar-items-icon" />
+              {!isDarkMode ? <MdNightlight size={30} className="navbar-items-icon" onClick={() => setDarkMode(!isDarkMode)}/> :
+              <MdLightMode size={30} className="navbar-items-icon" onClick={() => setDarkMode(!isDarkMode)}/>}
+              
             </div>
           </div>
         </div>
