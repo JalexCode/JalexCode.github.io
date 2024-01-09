@@ -3,6 +3,10 @@
 @tailwind utilities;
 @tailwind variants;
 
+body {
+    overflow-x: hidden;
+}
+
 @font-face {
     font-family: 'Ubuntu';
     src: url('/src/assets/fonts/Ubuntu-Regular.ttf') format('truetype');
@@ -23,6 +27,10 @@
 
 .menu-item {
     @apply bg-transparent hover:bg-indigo-800 transition-all duration-500 ease-in-out rounded-full px-5 py-2 text-xl text-white cursor-pointer
+}
+
+.menu-list-item {
+    @apply rounded-full p-4 bg-transparent hover:bg-indigo-800 transition-all duration-500 ease-in-out lg:text-2xl ssm:text-xl font-bold text-white cursor-pointer
 }
 
 .tag-badges {
@@ -52,7 +60,7 @@ hr {
 }
 
 .sections-title {
-    @apply text-5xl font-bold text-gray-700 text-center mb-10
+    @apply lg:text-5xl ssm:text-3xl font-bold text-gray-700 text-center mb-10
 }
 
 @keyframes fadeInUp {
@@ -75,17 +83,18 @@ hr {
     /*height: calc(100% + 2.5rem); /* Altura original del card más la altura de la barra 
     padding-bottom: 3rem;
   } */
-  
+
 .hover-trigger:hover .hover-target {
     /* transform: scale(1.25); */
     @apply scale-125 -translate-x-2 -translate-y-2
-  }
+}
 
-  .hover-trigger:hover .hover-bottom-bar-target {
-    height: 2.5rem; /* Ajusta la altura según tus necesidades */
-  }
+.hover-trigger:hover .hover-bottom-bar-target {
+    height: 2.5rem;
+    /* Ajusta la altura según tus necesidades */
+}
 
-.hover-trigger:hover .tag-title{
+.hover-trigger:hover .tag-title {
     @apply transition-opacity hover:opacity-100
 }
 
@@ -103,4 +112,8 @@ hr {
 
 .rocket {
     animation: fadeInUpRight 1s ease-out infinite;
+}
+
+.navbar-items-icon {
+    @apply my-auto bg-transparent hover:bg-indigo-800 transition-all duration-500 ease-in-out rounded-full p-1 text-xl text-white cursor-pointer
 }
