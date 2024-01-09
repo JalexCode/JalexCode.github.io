@@ -25,7 +25,7 @@ const Hero = () => {
                     </div>
                 </div>
                 {/* Lottie Animation */}
-                <div className='absolute z-0' style={{ top: '75%', left: '45%', transform: 'translate(-70%, -50%)' }}>
+                <div className='absolute z-0 lg:block ssm:hidden' style={{ top: '75%', left: '45%', transform: 'translate(-70%, -50%)' }}>
                     <Lottie
                         loop={false}
                         autoplay={true}
