@@ -27,10 +27,10 @@ const NavBar = () => {
   const [isDarkMode, setDarkMode] = useState<boolean>(false)
   return (
     <>
-      <nav className='bg-indigo-600 px-10 py-5 ssm:py-10 ssm:space-y-4 h-fit w-screen ssm:w-screen max-w-screen-xl backdrop-filter backdrop-blur-lg bg-opacity-50 z-50 fixed'>
-        <div className="flex justify-between items-center ssm:space-x-4">
+      <nav className='bg-indigo-600 px-10 py-5 sssm:py-10 ssm:py-10 sm:py-10 sssm:space-y-4 ssm:space-y-4 sm:space-y-4 h-fit w-screen sssm:w-screen ssm:w-screen sm:w-screen max-w-screen-xl backdrop-filter backdrop-blur-lg bg-opacity-50 z-50 fixed'>
+        <div className="flex justify-between items-center ssm:space-x-4 ">
           {/* X button to close menu */}
-          <div className='lg:hidden'>
+          <div className='lg:hidden md:hidden'>
             {toggleMenu ?
             <AiOutlineClose size={30} onClick={() => setToggleMenu(!toggleMenu)} className="navbar-items-icon" />
             : <HiMenuAlt1 size={30} onClick={() => setToggleMenu(!toggleMenu)} className="navbar-items-icon" />}
@@ -41,8 +41,8 @@ const NavBar = () => {
           </div>
           {/* Menu Bar */}
           <div>
-            <div className='flex lg:space-x-4'>
-              <div className="flex flex-wrap space-x-4 lg:block ssm:hidden">
+            <div className='flex lg:space-x-4 md:space-x-4'>
+              <div className="flex flex-wrap space-x-4 sssm:hidden ssm:hidden sm:hidden md:block lg:block">
                 {items.map((element: Sections, index) => (
                   <a key={index} className="menu-item" onClick={() => scrollToSection(element.id)}>{element.title}</a>
                 ))}
@@ -54,7 +54,7 @@ const NavBar = () => {
           </div>
         </div>
         {/* Menu items list for responsive design */}
-        {toggleMenu ? (<div className="flex justify-between ssm:block lg:hidden">
+        {toggleMenu ? (<div className="flex justify-between sssm:block ssm:block md:hidden lg:hidden">
           <ul className='space-y-2'>
             {items.map((element, index) => (
               <li key={index} className="menu-list-item" onClick={() => scrollToSection(element.id)}>{element.title}</li>
