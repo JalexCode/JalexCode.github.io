@@ -30,7 +30,7 @@ body {
 }
 
 .menu-list-item {
-    @apply rounded-full p-4 bg-transparent hover:bg-indigo-800 transition-all duration-500 ease-in-out lg:text-2xl ssm:text-xl font-sans text-white cursor-pointer
+    @apply rounded-full p-4 bg-transparent hover:bg-indigo-800 transition-all duration-500 ease-in-out sssm:text-xl ssm:text-xl md:text-2xl lg:text-2xl font-sans text-white cursor-pointer
 }
 
 .tag-badges {
