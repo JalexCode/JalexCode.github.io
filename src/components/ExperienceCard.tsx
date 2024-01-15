@@ -1,12 +1,14 @@
+import { useState } from 'react';
 import { ExperienceType } from '../data/experience'
-
+import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 interface ExperienceCardProps {
     experience: ExperienceType;
 }
 
 const ExperienceCard = ({ experience }: ExperienceCardProps) => {
+    const [pressed, setPressed] = useState<boolean>(false)
     return (
-        <div className="rounded-3xl shadow-2xl w-fit transition-all hover:scale-105 hover:shadow-black">
+        <div className={`rounded-3xl shadow-2xl w-full hover:scale-105 hover:shadow-black transition-all duration-500 ease-in-out`}>
             <div className="h-36 rounded-tr-3xl rounded-tl-3xl shadow-xl" style={{ backgroundColor: "rgb(20, 124, 244)" }}>
                 <div className="flex justify-center items-center flex-col">
                     <a target="_blank" href={experience.webLink}>
@@ -17,13 +19,16 @@ const ExperienceCard = ({ experience }: ExperienceCardProps) => {
                     </div>
                 </div>
             </div>
-            <div className="p-6 lg:mt-14 ssm:mt-24 flex justify-center items-center flex-col">
+            <div className="p-6 lg:mt-14 ssm:mt-24 sssm:mt-20 flex justify-center items-center flex-col">
                 <h2 className="lg:text-3xl ssm:text-2xl opacity-70 mb-2 text-center font-bold">{experience.role}</h2>
                 <h2 className="mb-2 text-slate-600">{experience.place}</h2>
                 <p className="text-center text-slate-600">{experience.workingPeriod}</p>
-                <p className="mt-5 px-2 hidden lg:flex opacity-70">
+                <p className={`mt-5 px-2 lg:flex ${pressed ? '' : 'sssm:hidden ssm:hidden'} opacity-70 transition-all duration-500 ease-in-out`}>
                     {experience.description}
                 </p>
+                <div className='flex space-x-2 my-5 text-slate-600 items-center lg:hidden' onClick={()  =>  setPressed(!pressed)}>
+                    <span className='font-bold'>{pressed ? 'Mostrar menos' : 'Mostrar más'}</span>
+                    {pressed ? <IoIosArrowUp size={20} className={"text-slate-400"}/> : <IoIosArrowDown size={20} className={"text-slate-500"}/>}</div>
                 <div className='mt-8 bottom-0 '>
                     <div className='flex flex-wrap gap-2'>
                         {experience.skills.map((skill, index) => (
