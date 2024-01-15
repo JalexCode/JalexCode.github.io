@@ -4,19 +4,19 @@ import SocialLinks from './SocialLinks';
 import { personalInfo } from '../data/personalInfo';
 const Hero = () => {
     return (
-        <section id="aboutme" className='bg-indigo-600 lg:pt-48 ssm:pt-28 pb-60'>
-            <div className='flex justify-around items-center px-10 ssm:pt-10 lg:space-x-10 lg:flex-row ssm:flex-col-reverse text-white animate-moveUp'>
+        <section id="aboutme" className='bg-indigo-600 sssm:pt-32 ssm:pt-28 lg:pt-48 sssm:pb-0 lg:pb-60'>
+            <div className='flex justify-around items-center w-full px-10 sssm:pt-10 ssm:pt-10 md:space-x-10 lg:space-x-10 md:flex-row lg:flex-row sssm:flex-col-reverse ssm:flex-col-reverse text-white animate-moveUp'>
                 {/* About Me */}
-                <div className='w-1/2 ssm:w-fit ssm:items-center ssm:justify-center z-10'>
+                <div className='sssm:w-fit ssm:w-fit lg:w-1/2 sssm:items-center ssm:items-center sssm:justify-center ssm:justify-center z-10'>
                     {/* About me && Social Links */}
                     <div className='relative z-1'>
-                        <div className='flex lg:flex-row ssm:flex-col lg:text-5xl ssm:text-2xl text-slate-300'>
+                        <div className='flex sssm:flex-col ssm:flex-col md:flex-row lg:flex-row sssm:text-2xl ssm:text-2xl md:text-5xl lg:text-5xl text-slate-300'>
                             <p className=''>Hello there!👋 </p>
                             <p>I'm</p>
                         </div>
-                        <h1 className='text-white lg:text-7xl ssm:text-4xl'>{personalInfo.name}</h1>
+                        <h1 className='text-white sssm:text-4xl ssm:text-4xl md:text-7xl lg:text-7xl'>{personalInfo.name}</h1>
                         <hr />
-                        <p className='text-2xl lg:mt-10 ssm:mt-4 text-slate-300'>
+                        <p className='text-2xl sssm:mt-4 ssm:mt-4 md:mt-10 lg:mt-10 text-slate-300'>
                             {personalInfo.aboutMe}
                         </p>
                         <div className='mt-10'>
@@ -25,7 +25,7 @@ const Hero = () => {
                     </div>
                 </div>
                 {/* Lottie Animation */}
-                <div className='absolute z-0 lg:block ssm:hidden' style={{ top: '75%', left: '45%', transform: 'translate(-70%, -50%)' }}>
+                <div className='absolute z-0 sssm:hidden ssm:hidden md:block lg:block' style={{ top: '75%', left: '45%', transform: 'translate(-70%, -50%)' }}>
                     <Lottie
                         loop={false}
                         autoplay={true}
@@ -34,7 +34,7 @@ const Hero = () => {
                     />
                 </div>
                 {/* My picture */}
-                <div className='w-1/2 ssm:w-full justify-center items-center lg:mb-0 ssm:mb-5 z-40'>
+                <div className='sssm:w-full ssm:w-full md:w-1/2 lg:w-1/2 justify-center items-center sssm:mb-5 ssm:mb-5 md:mb-0 lg:mb-0 z-40'>
                     <img decoding="async" data-nimg="1" src={personalInfo.heroPic} loading='lazy' alt='JalexCode Picture' width={250} height={250} className='rounded-full w-full border-8 border-white' />
                 </div>
             </div>

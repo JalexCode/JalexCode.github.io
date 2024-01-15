@@ -9,12 +9,12 @@ function getCurrentYear(): string {
 
 const Footer = () => {
   return (
-    <div className="flex lg:flex-row ssm:flex-col bg-indigo-600 p-8 h-fit w-full justify-between items-center text-white relative">
-      <div className="lg:justify-start ssm:justify-center lg:items-start ssm:items-center">
-        <div className="text-sm font-bold mb-2 lg:text-start ssm:text-center">Contact me!</div>
+    <div className="flex sssm:flex-col ssm:flex-col lg:flex-row bg-indigo-600 p-8 h-fit w-full justify-between items-center text-white relative">
+      <div className="sssm:justify-center ssm:justify-center lg:justify-start ssm:items-center sssm:items-center lg:items-start">
+        <div className="text-sm font-bold mb-2 sssm:text-center ssm:text-center lg:text-start">Contact me!</div>
         <SocialLinks />
       </div>
-      <div className="lg:w-fit ssm:w-full lg:mt-0 ssm:mt-4 text-center">Copyright © {getCurrentYear()} - Todos los derechos reservados</div>
+      <div className="ssm:w-full lg:w-fit ssm:mt-4 sssm:mt-4 lg:mt-0 text-center">Copyright © {getCurrentYear()} - Todos los derechos reservados</div>
     </div>
   )
 }
