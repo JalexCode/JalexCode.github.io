@@ -26,9 +26,9 @@ const ExperienceCard = ({ experience }: ExperienceCardProps) => {
                 <p className={`dark:text-slate-300 mt-5 px-2 lg:flex ${pressed ? '' : 'sssm:hidden ssm:hidden'} opacity-70 transition-all duration-500 ease-in-out`}>
                     {experience.description}
                 </p>
-                <div className='flex space-x-2 my-5 text-slate-600 items-center lg:hidden' onClick={()  =>  setPressed(!pressed)}>
-                    <span className='font-bold'>{pressed ? 'Mostrar menos' : 'Mostrar más'}</span>
-                    {pressed ? <IoIosArrowUp size={20} className={"text-slate-400"}/> : <IoIosArrowDown size={20} className={"text-slate-500"}/>}</div>
+                <div className='flex space-x-2 my-5 text-slate-600 dark:text-slate-300 items-center justify-center lg:hidden' onClick={()  =>  setPressed(!pressed)}>
+                    <span className='font-sans'>{pressed ? 'Mostrar menos' : 'Mostrar más'}</span>
+                    {pressed ? <IoIosArrowUp size={20} className={"text-slate-400 dark:text-slate-300"}/> : <IoIosArrowDown size={20} className={"text-slate-400 dark:text-slate-300"}/>}</div>
                 <div className='mt-8 bottom-0 '>
                     <div className='flex flex-wrap gap-2'>
                         {experience.skills.map((skill, index) => (
