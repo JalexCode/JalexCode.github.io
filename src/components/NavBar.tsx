@@ -3,6 +3,7 @@ import JalexCode from '../assets/jalex.png'
 import { useState } from 'react';
 import { MdNightlight, MdLightMode } from "react-icons/md";
 import {HiMenuAlt1} from "react-icons/hi";
+import { useDarkMode } from '../context/DarkModeContext';
 interface Sections {
   title: string,
   id: string,
@@ -24,10 +25,10 @@ const NavBar = () => {
 
   // const [currentSection, setCurrentSection] = useState<string>(items[0].id)
   const [toggleMenu, setToggleMenu] = useState<boolean>(false)
-  const [isDarkMode, setDarkMode] = useState<boolean>(false)
+  const { isDarkMode, toggleDarkMode  } = useDarkMode();
   return (
     <>
-      <nav className='bg-indigo-600 px-10 py-5 sssm:py-10 ssm:py-10 sm:py-10 sssm:space-y-4 ssm:space-y-4 sm:space-y-4 h-fit w-screen sssm:w-screen ssm:w-screen sm:w-screen max-w-screen-xl backdrop-filter backdrop-blur-lg bg-opacity-50 z-50 fixed'>
+      <nav className='bg-indigo-600 dark:dark:bg-slate-800  px-10 py-5 sssm:py-10 ssm:py-10 sm:py-10 sssm:space-y-4 ssm:space-y-4 sm:space-y-4 h-fit w-screen sssm:w-screen ssm:w-screen sm:w-screen max-w-screen-xl backdrop-filter dark:backdrop-filter backdrop-blur-lg dark:backdrop-blur-lg bg-opacity-50 dark:bg-opacity-50 z-50 fixed'>
         <div className="flex justify-between items-center ssm:space-x-4 ">
           {/* X button to close menu */}
           <div className='lg:hidden md:hidden'>
@@ -47,8 +48,8 @@ const NavBar = () => {
                   <a key={index} className="menu-item" onClick={() => scrollToSection(element.id)}>{element.title}</a>
                 ))}
               </div>
-              {!isDarkMode ? <MdNightlight size={30} className="navbar-items-icon" onClick={() => setDarkMode(!isDarkMode)}/> :
-              <MdLightMode size={30} className="navbar-items-icon" onClick={() => setDarkMode(!isDarkMode)}/>}
+              {!isDarkMode ? <MdNightlight size={30} className="navbar-items-icon" onClick={() => toggleDarkMode ()}/> :
+              <MdLightMode size={30} className="navbar-items-icon" onClick={() => toggleDarkMode ()}/>}
               
             </div>
           </div>

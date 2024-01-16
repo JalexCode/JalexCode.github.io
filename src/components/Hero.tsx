@@ -4,7 +4,7 @@ import SocialLinks from './SocialLinks';
 import { personalInfo } from '../data/personalInfo';
 const Hero = () => {
     return (
-        <section id="aboutme" className='bg-indigo-600 sssm:pt-32 ssm:pt-28 lg:pt-48 sssm:pb-0 lg:pb-60'>
+        <section id="aboutme" className='bg-indigo-600 dark:bg-slate-800 sssm:pt-32 ssm:pt-28 lg:pt-48 sssm:pb-0 lg:pb-60'>
             <div className='flex justify-around items-center w-full px-10 sssm:pt-10 ssm:pt-10 md:space-x-10 lg:space-x-10 md:flex-row lg:flex-row sssm:flex-col-reverse ssm:flex-col-reverse text-white animate-moveUp'>
                 {/* About Me */}
                 <div className='sssm:w-fit ssm:w-fit lg:w-1/2 sssm:items-center ssm:items-center sssm:justify-center ssm:justify-center z-10'>

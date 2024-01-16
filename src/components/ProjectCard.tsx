@@ -12,9 +12,9 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
                 <img src={project.iconPath} className='h-24 min-h-24 object-cover transition-all hover-target' />
             </div>
             <div className='flex flex-col sssm:text-center ssm:text-center lg:text-start h-full flex-grow'>
-                <h3 className='font-bold sssm:text-lg ssm:text-lg lg:text-xl mb-2'>{project.name}</h3>
-                <ReactMarkdown className='font-sans lg:text-md text-slate-500 mb-4'>{project.markdownDescription}</ReactMarkdown>
-                <div className='text-slate-400 text-sm mt-auto mb-2'>Technologies tags:</div>
+                <h3 className='font-bold sssm:text-lg ssm:text-lg lg:text-xl mb-2 dark:text-slate-200'>{project.name}</h3>
+                <ReactMarkdown className='font-sans lg:text-md text-slate-500 dark:text-slate-300 mb-4'>{project.markdownDescription}</ReactMarkdown>
+                <div className='text-slate-400 dark:text-slate-300 text-sm mt-auto mb-2'>Technologies tags:</div>
                 <div className='flex flex-wrap gap-2 sssm:justify-center ssm:justify-center lg:justify-start sssm:items-center lg:items-start'>
                     {project.usedTechs?.map((tech, index) => (
                         <div key={index} className='tag-badges'>{tech}</div>

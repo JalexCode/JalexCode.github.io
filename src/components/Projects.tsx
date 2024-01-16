@@ -3,7 +3,7 @@ import projects from "../data/projects";
 
 const Projects = () => {
   return (
-    <section id="projects" className='bg-white pt-40 sssm:mt-32 sm:mt-32 lg:mt-52 sssm:mx-10 ssm:mx-10 lg:mx-20 justify-center items-center w-fit relative'>
+    <section id="projects" className='bg-white dark:bg-slate-600 pt-40 sssm:mt-32 sm:mt-32 lg:mt-52 sssm:mx-10 ssm:mx-10 lg:mx-20 justify-center items-center w-fit relative'>
       <div className="z-1">
         <h2 className="sections-title mb-8 text-2xl font-bold">Projects</h2>
       </div>
