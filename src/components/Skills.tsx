@@ -7,7 +7,7 @@ import frontEndDevAnimation from '../assets/lotties/front-end-lottie-purple.json
 
 const Skills = () => {
   return (
-    <section id="skills" className="bg-indigo-600 pb-20">
+    <section id="skills" className="bg-indigo-600 dark:bg-slate-800 pb-20">
       <div className="card relative top-56 ssm:pt-10 pb-10 sssm:mx-10 lg:mx-20 z-40">
           <div className="text-center">
             <div >
@@ -20,7 +20,7 @@ const Skills = () => {
                     <tbody>
                       <tr>
                         <td>
-                          <h3 className="text-1xl font-semibold sssm:text-center ssm:text-center lg:text-start text-gray-600">{group.groupName}</h3>
+                          <h3 className="text-1xl font-semibold sssm:text-center ssm:text-center lg:text-start text-gray-600 dark:text-slate-300">{group.groupName}</h3>
                         </td>
                       </tr>
                       {group.skills.sort((a, b) => b.rating - a.rating).map(skill => (
