@@ -94,7 +94,7 @@ const projects: Array<Project> = [
     {
         name: 'Portal Usuario',
         markdownDescription: PortalUsuarioDescription,
-        iconPath: '/images/rubiera.png',
+        iconPath: '/images/portal.png',
         usedTechs: [
             "Android",
             "Java",
