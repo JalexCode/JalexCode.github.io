@@ -124,5 +124,5 @@ hr {
 }
 
 .navbar-items-icon {
-    @apply my-auto bg-transparent hover:bg-indigo-800 transition-all duration-500 ease-in-out rounded-full p-1 text-xl text-white cursor-pointer
+    @apply my-auto bg-transparent hover:bg-indigo-800 dark:hover:bg-slate-700 transition-all duration-500 ease-in-out rounded-full p-1 text-xl text-white cursor-pointer
 }
