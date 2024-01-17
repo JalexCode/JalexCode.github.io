@@ -18,19 +18,19 @@ const skillGroups: Array<SkillGroup> = [
             {
                 name: 'React',
                 iconPath: '/images/react.svg',
-                rating: 40,
+                rating: 60,
                 color: "blue",
             },
             {
                 name: 'Django',
                 iconPath: '/images/django.svg',
-                rating: 26,
+                rating: 40,
                 color: "green",
             },
             {
                 name: 'Django REST',
                 iconPath: '/images/djangorest.svg',
-                rating: 15,
+                rating: 30,
                 color: "red",
             },
             {
@@ -38,6 +38,18 @@ const skillGroups: Array<SkillGroup> = [
                 iconPath: '/images/qt.svg',
                 rating: 60,
                 color: "green",
+            },
+            {
+                name: 'Svelte',
+                iconPath: '/images/svelte.svg',
+                rating: 50,
+                color: "orange",
+            },
+            {
+                name: 'Laravel',
+                iconPath: '/images/laravel.svg',
+                rating: 30,
+                color: "red",
             },
         ]
     },
@@ -58,7 +70,7 @@ const skillGroups: Array<SkillGroup> = [
             },{
                 name: 'TypeScript',
                 iconPath: '/images/typescript.svg',
-                rating: 40,
+                rating: 50,
                 color: "blue",
             },{
                 name: 'Java',
@@ -69,6 +81,12 @@ const skillGroups: Array<SkillGroup> = [
                 name: 'Kotlin',
                 iconPath: '/images/kotlin.svg',
                 rating: 25,
+                color: "indigo",
+            },
+            {
+                name: 'Lua',
+                iconPath: '/images/lua.png',
+                rating: 60,
                 color: "indigo",
             },
         ]
