@@ -1,4 +1,5 @@
 import ReactMarkdown from 'react-markdown';
+import { Project } from '../data/projectsInterface';
 // import { AiOutlineGithub } from 'react-icons/ai';
 
 interface ProjectCardProps {
