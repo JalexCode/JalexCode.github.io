@@ -1,3 +1,5 @@
+import { Project } from "./projectsInterface";
+
 const ACuantoEstaDescription =
 `
 **¿A cuánto está?** is a browser extension that will show you the current exchange value of the Dollar, Euro and MLC in Cuba.
