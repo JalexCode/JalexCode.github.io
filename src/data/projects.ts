@@ -1,3 +1,5 @@
+import { Project } from "./projectsInterface";
+
 const ACuantoEstaDescription =
 `
 **¿A cuánto está?** is a browser extension that will show you the current exchange value of the Dollar, Euro and MLC in Cuba.
@@ -5,7 +7,7 @@ const ACuantoEstaDescription =
 
 const VisualesUclvExplorerDescription =
 `
-**VisualesUCLV** are a desktop and Android applications that allows the user to explore the content of the Cuban ftp http://visuales.uclv.cu.
+**Visuales UCLV** are a desktop and Android applications that allows the user to explore the content of the Cuban ftp http://visuales.uclv.cu.
 `;
 
 const Apklis4DevsDescription =
@@ -16,6 +18,11 @@ const Apklis4DevsDescription =
 const RubieraDescription =
 `
 **Rubiera** is a desktop application that shows Cuba weather information.
+`;
+
+const PortalUsuarioDescription =
+`
+**Portal Usuario** is an Android application that allows cuban users to use in an easily and friendly way Cubacel services.
 `;
 
 const projects: Array<Project> = [
@@ -82,6 +89,19 @@ const projects: Array<Project> = [
         ],
         screenShots: [
             '/images/screenshots/rubiera/1.png'
+        ]
+    },
+    {
+        name: 'Portal Usuario',
+        markdownDescription: PortalUsuarioDescription,
+        iconPath: '/images/portal.png',
+        usedTechs: [
+            "Android",
+            "Java",
+            "WebScrapping",
+        ],
+        screenShots: [
+            '/images/screenshots/portal/1.jpg'
         ]
     },
 

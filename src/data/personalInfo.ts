@@ -1,4 +1,5 @@
 import { BsFacebook, BsInstagram, BsTelegram, BsGithub, BsLinkedin, BsEnvelopeAtFill } from 'react-icons/bs'
+import { IoBriefcase } from "react-icons/io5";
 
 export interface SocialLinksType {
     icon: (props: unknown) => JSX.Element
@@ -48,5 +49,10 @@ export const socialLinks: Array<SocialLinksType> = [
         icon: BsEnvelopeAtFill,
         title: 'Send me an email',
         url: 'mailto:javierglez9910@gmail.com',
+    },
+    {
+        icon: IoBriefcase,
+        title: 'Get my resume',
+        url: 'https://rxresu.me/javierglez9910/imported-from-linkedin-26062023032246',
     },
 ];
