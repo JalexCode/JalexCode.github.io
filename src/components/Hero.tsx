@@ -35,7 +35,7 @@ const Hero = () => {
                 </div>
                 {/* My picture */}
                 <div className='sssm:w-full ssm:w-full md:w-1/2 lg:w-1/2 justify-center items-center sssm:mb-5 ssm:mb-5 md:mb-0 lg:mb-0 z-40'>
-                    <img decoding="async" data-nimg="1" src={personalInfo.heroPic} loading='lazy' alt='JalexCode Picture' width={250} height={250} className='rounded-full w-full border-8 border-white' />
+                    <img decoding="async" data-nimg="1" src={personalInfo.heroPic} loading='lazy' alt='JalexCode Picture' width={250} height={250} className='rounded-full w-full border-0 transition-all duration-300 ease-in-out hover:border-8 hover:border-white' />
                 </div>
             </div>
         </section>
