@@ -2,6 +2,8 @@ import Lottie from 'lottie-react'
 import reactAnimation from '../assets/lotties/react.json';
 import SocialLinks from './SocialLinks';
 import { personalInfo } from '../data/personalInfo';
+import { TypeAnimation } from 'react-type-animation';
+
 const Hero = () => {
     return (
         <section id="aboutme" className='bg-indigo-600 dark:bg-slate-800 sssm:pt-32 ssm:pt-28 lg:pt-48 sssm:pb-0 lg:pb-60'>
@@ -14,7 +16,19 @@ const Hero = () => {
                             <p className=''>Hello there!👋 </p>
                             <p>I'm</p>
                         </div>
-                        <h1 className='text-white sssm:text-4xl ssm:text-4xl md:text-7xl lg:text-7xl'>{personalInfo.name}</h1>
+                        <h1 className='text-white sssm:text-4xl ssm:text-4xl md:text-7xl lg:text-7xl'>
+                            <TypeAnimation sequence={[
+        personalInfo.name,
+        2000,
+        personalInfo.nick,
+        2000,
+      ]}
+      wrapper="span"
+      speed={50}
+      className=''
+      repeat={Infinity}
+    />
+                            </h1>
                         <hr />
                         <p className='text-2xl sssm:mt-4 ssm:mt-4 md:mt-10 lg:mt-10 text-slate-300'>
                             {personalInfo.aboutMe}

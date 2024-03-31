@@ -13,8 +13,14 @@ interface Skill {
 
 const skillGroups: Array<SkillGroup> = [
     {
-        groupName: 'Libraries and Frameworks',
+        groupName: 'Frameworks',
         skills: [
+            {
+                name: 'NextJs',
+                iconPath: '/images/next-js.svg',
+                rating: 80,
+                color: "black",
+            },
             {
                 name: 'React',
                 iconPath: '/images/react.svg',
@@ -34,12 +40,6 @@ const skillGroups: Array<SkillGroup> = [
                 color: "red",
             },
             {
-                name: 'PyQt5',
-                iconPath: '/images/qt.svg',
-                rating: 60,
-                color: "green",
-            },
-            {
                 name: 'Svelte',
                 iconPath: '/images/svelte.svg',
                 rating: 50,
@@ -51,7 +51,43 @@ const skillGroups: Array<SkillGroup> = [
                 rating: 30,
                 color: "red",
             },
+            {
+                name: 'Android',
+                iconPath: '/images/android-logomark.svg',
+                rating: 60,
+                color: "green",
+            },
         ]
+    },
+    {
+        groupName: 'UI Libraries',
+        skills: [
+            {
+                name: 'TailwindCSS',
+                iconPath: '/images/tailwindcss.svg',
+                rating: 80,
+                color: "blue",
+            },
+            {
+                name: 'Flowbite (React)',
+                iconPath: '/images/flowbite.svg',
+                rating: 100,
+                color: "indigo",
+            },
+            {
+                name: 'AntDesign',
+                iconPath: '/images/antdesign.svg',
+                rating: 100,
+                color: "blue",
+            },
+
+            {
+                name: 'PyQt5',
+                iconPath: '/images/qt.svg',
+                rating: 60,
+                color: "green",
+            },
+        ],
     },
     {
         groupName: 'Programming Languages',
@@ -65,19 +101,19 @@ const skillGroups: Array<SkillGroup> = [
             {
                 name: 'JavaScript',
                 iconPath: '/images/javascript.svg',
-                rating: 40,
+                rating: 70,
                 color: "yellow",
-            },{
+            }, {
                 name: 'TypeScript',
                 iconPath: '/images/typescript.svg',
-                rating: 50,
+                rating: 70,
                 color: "blue",
-            },{
+            }, {
                 name: 'Java',
                 iconPath: '/images/java.svg',
                 rating: 50,
                 color: "indigo",
-            },{
+            }, {
                 name: 'Kotlin',
                 iconPath: '/images/kotlin.svg',
                 rating: 25,
@@ -86,7 +122,7 @@ const skillGroups: Array<SkillGroup> = [
             {
                 name: 'Lua',
                 iconPath: '/images/lua.png',
-                rating: 60,
+                rating: 50,
                 color: "indigo",
             },
         ]

@@ -9,7 +9,7 @@ const ExperienceCard = ({ experience }: ExperienceCardProps) => {
     const [pressed, setPressed] = useState<boolean>(false)
     return (
         <div className={`bg-white dark:bg-slate-500 rounded-3xl shadow-2xl w-full hover:scale-105 hover:shadow-black transition-all duration-500 ease-in-out`}>
-            <div className="h-36 rounded-tr-3xl rounded-tl-3xl shadow-xl" style={{ backgroundColor: "rgb(20, 124, 244)" }}>
+            <div className="h-36 rounded-tr-3xl rounded-tl-3xl shadow-xl" style={{ backgroundColor: experience.color }}>
                 <div className="flex justify-center items-center flex-col">
                     <a target="_blank" href={experience.webLink}>
                         <h3 className="lg:text-2xl ssm:text-xl text-center mb-2 font-bold text-white mt-12">{experience.workName}</h3>

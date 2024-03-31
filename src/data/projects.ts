@@ -28,6 +28,7 @@ const PortalUsuarioDescription =
 const projects: Array<Project> = [
     {
         name: 'Visuales UCLV Explorer',
+        type: 'Open Source',
         markdownDescription: VisualesUclvExplorerDescription,
         iconPath: '/images/visuales.png',
         usedTechs: [
@@ -46,6 +47,7 @@ const projects: Array<Project> = [
     },
     {
         name: 'Apklis4Devs',
+        type: 'Individual',
         markdownDescription: Apklis4DevsDescription,
         iconPath: '/images/apklis4devs.png',
         usedTechs: [
@@ -62,6 +64,7 @@ const projects: Array<Project> = [
     },
     {
         name: '¿A cuánto está?',
+        type: 'Open Source',
         markdownDescription: ACuantoEstaDescription,
         iconPath: '/images/a-cuanto-esta.png',
         usedTechs: [
@@ -79,6 +82,7 @@ const projects: Array<Project> = [
     },
     {
         name: 'Rubiera',
+        type: 'Open Source',
         markdownDescription: RubieraDescription,
         iconPath: '/images/rubiera.png',
         usedTechs: [
@@ -93,6 +97,7 @@ const projects: Array<Project> = [
     },
     {
         name: 'Portal Usuario',
+        type: 'Individual',
         markdownDescription: PortalUsuarioDescription,
         iconPath: '/images/portal.png',
         usedTechs: [

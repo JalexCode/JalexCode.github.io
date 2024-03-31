@@ -1,8 +1,9 @@
+import { IconType } from 'react-icons';
 import { BsFacebook, BsInstagram, BsTelegram, BsGithub, BsLinkedin, BsEnvelopeAtFill } from 'react-icons/bs'
 import { IoBriefcase } from "react-icons/io5";
 
 export interface SocialLinksType {
-    icon: (props: unknown) => JSX.Element
+    icon: IconType
     title: string;
     url: string;
 }
@@ -10,12 +11,14 @@ export interface SocialLinksType {
 export interface PersonalInfoProps {
     aboutMe: string;
     name: string;
+    nick: string;
     heroPic: string;
 }
 
 export const personalInfo:PersonalInfoProps = {
     aboutMe: "I'm a Software Engineer and Front-End Developer passionate about creating innovative, useful and aesthetic applications. I enjoy learning new technologies and turning my ideas into products.",
     name: "Javier Alejandro",
+    nick: "JalexCode",
     heroPic: "/avatar.jpg",
 };
 
