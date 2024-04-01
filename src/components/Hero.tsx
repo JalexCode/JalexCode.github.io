@@ -6,7 +6,8 @@ import { TypeAnimation } from 'react-type-animation';
 
 const Hero = () => {
     return (
-        <section id="aboutme" className='bg-indigo-600 dark:bg-slate-800 sssm:pt-32 ssm:pt-28 lg:pt-48 sssm:pb-0 lg:pb-60'>
+        <section id="aboutme" className='bg-indigo-600 dark:bg-slate-800 sssm:pt-32 ssm:pt-28 lg:pt-48 sssm:pb-0 lg:pb-60
+        lg:px-0 md:px-0 sm:px-10 ssm:px-10 sssm:px-10'>
             <div className='flex justify-around items-center w-full 
             sssm:pt-10 ssm:pt-10 smm:pt-10 md:pt-10 lg:pt-0
             md:space-x-10 lg:space-x-10 md:flex-row lg:flex-row sssm:flex-col-reverse ssm:flex-col-reverse text-white animate-moveUp'>
@@ -37,14 +38,14 @@ const Hero = () => {
                             <p className='text-2xl text-slate-300'>
                                 {personalInfo.aboutMe}
                             </p>
-                            <div className='mt-10'>
+                            <div className='mt-10 mb-4'>
                                 <SocialLinks />
                             </div>
                         </section>
                     </div>
                 </div>
                 {/* Lottie Animation */}
-                <div className='absolute z-0 sssm:hidden ssm:hidden md:block lg:block' style={{ top: '75%', left: '45%', transform: 'translate(-70%, -50%)' }}>
+                <div className='absolute z-0 sssm:hidden ssm:hidden md:block lg:block' style={{ top: '75%', left: '45%', transform: 'translate(-55%, -68%)' }}>
                     <Lottie
                         loop={false}
                         autoplay={true}
