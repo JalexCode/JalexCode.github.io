@@ -12,10 +12,10 @@ const ExperienceCard = ({ experience }: ExperienceCardProps) => {
             <div className="h-36 rounded-tr-3xl rounded-tl-3xl shadow-xl" style={{ backgroundColor: experience.color }}>
                 <div className="flex justify-center items-center flex-col">
                     <a target="_blank" href={experience.webLink}>
-                        <h3 className="lg:text-2xl ssm:text-xl text-center mb-2 font-bold text-white mt-12">{experience.workName}</h3>
+                        <h3 className="lg:text-2xl ssm:text-xl text-center mb-2 font-bold text-white mt-12">{experience.workplaceName}</h3>
                     </a>
                     <div className="shadow-xl rounded-full">
-                        <img alt={experience.workName} loading="lazy" width="120" height="120" decoding="async" data-nimg="1" src={experience.image} />
+                        <img className='rounded-full' alt={experience.workplaceName} loading="lazy" width="120" height="120" decoding="async" data-nimg="1" src={experience.image} />
                     </div>
                 </div>
             </div>
