@@ -16,7 +16,7 @@ export interface PersonalInfoProps {
 }
 
 export const personalInfo:PersonalInfoProps = {
-    aboutMe: "I'm a Software Engineer and Front-End Developer passionate about creating innovative, useful and aesthetic applications. I enjoy learning new technologies and turning my ideas into products.",
+    aboutMe: "I'm a Software Engineer and Front-End Developer passionate about creating innovative, useful and aesthetic applications. I enjoy learning new technologies and turning my ideas into products🚀",
     name: "Javier Alejandro",
     nick: "JalexCode",
     heroPic: "/avatar.jpg",

@@ -2,7 +2,7 @@
 
 export type ExperienceType = {
     color: string;
-    workName: string;
+    workplaceName: string;
     workingPeriod: string;
     place: string;
     time: string;
@@ -17,7 +17,7 @@ export type ExperienceType = {
 export const experience: Array<ExperienceType> = [
     {
         color: "rgb(150, 124, 244)",
-        workName: 'Freelance',
+        workplaceName: 'Mao Consulting',
         workingPeriod: 'Feb 2024 - Now',
         place: 'Spain',
         time: 'Fulltime',
@@ -39,7 +39,7 @@ export const experience: Array<ExperienceType> = [
     },
     {
         color: "rgb(20, 124, 244)",
-        workName: 'University of Camagüey',
+        workplaceName: 'University of Camagüey',
         workingPeriod: 'Jan 2023 - Now',
         place: 'Camagüey, Cuba',
         time: 'Full',
