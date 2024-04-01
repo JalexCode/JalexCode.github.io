@@ -26,5 +26,9 @@ export default {
     },
   },
   plugins: [],
+  safelist: [
+    { pattern: /bg-(red|green|blue|yellow|pink|orange|indigo|gray)-(100|200|300|400|500)/ },
+  ],
+
 }
 

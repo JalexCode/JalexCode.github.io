@@ -19,7 +19,7 @@ const skillGroups: Array<SkillGroup> = [
                 name: 'NextJs',
                 iconPath: '/images/next-js.svg',
                 rating: 80,
-                color: "black",
+                color: "gray",
             },
             {
                 name: 'React',
@@ -71,14 +71,14 @@ const skillGroups: Array<SkillGroup> = [
             {
                 name: 'Flowbite (React)',
                 iconPath: '/images/flowbite.svg',
-                rating: 100,
+                rating: 90,
                 color: "indigo",
             },
             {
                 name: 'AntDesign',
                 iconPath: '/images/antdesign.svg',
-                rating: 100,
-                color: "blue",
+                rating: 90,
+                color: "red",
             },
 
             {
@@ -112,12 +112,12 @@ const skillGroups: Array<SkillGroup> = [
                 name: 'Java',
                 iconPath: '/images/java.svg',
                 rating: 50,
-                color: "indigo",
+                color: "red",
             }, {
                 name: 'Kotlin',
                 iconPath: '/images/kotlin.svg',
                 rating: 25,
-                color: "indigo",
+                color: "pink",
             },
             {
                 name: 'Lua',
@@ -140,7 +140,7 @@ const skillGroups: Array<SkillGroup> = [
                 name: 'SQLite',
                 iconPath: '/images/sqlite.svg',
                 rating: 50,
-                color: "indigo",
+                color: "blue",
             },
         ]
     },
