@@ -1,5 +1,6 @@
 import ProjectCard from "./ProjectCard";
 import projects from "../data/projects";
+import { Bounce } from "react-awesome-reveal";
 
 const Projects = () => {
   return (
@@ -8,9 +9,11 @@ const Projects = () => {
         <h2 className="sections-title text-2xl font-bold">Projects</h2>
       </div>
       <div className="sssm:flex ssm:flex lg:grid sssm:flex-col ssm:flex-col lg:grid-cols-2 sssm:gap-24 ssm:gap-24 lg:gap-10 sssm:mt-10 ssm:mt-10 lg:mt-0 z-1">
-        {projects.map((project, index) => (
-          <ProjectCard key={index} project={project} />
-        ))}
+        <Bounce triggerOnce>
+          {projects.map((project, index) => (
+            <ProjectCard key={index} project={project} />
+          ))}
+        </Bounce>
       </div>
     </section>
   );
