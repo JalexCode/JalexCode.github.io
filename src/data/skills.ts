@@ -1,17 +1,17 @@
 
-interface SkillGroup {
+export interface SkillGroup {
     groupName: string;
     skills: Array<Skill>;
 }
 
-interface Skill {
+export interface Skill {
     name: string;
     iconPath: string;
     rating: number;
     color: string;
 }
 
-const skillGroups: Array<SkillGroup> = [
+export const skillGroups: Array<SkillGroup> = [
     {
         groupName: 'Frameworks',
         skills: [

@@ -1,20 +1,44 @@
 import SkillItem from "./SkillItem";
-import skillGroups from "../data/skills";
-import React from "react";
+import { skillGroups as SkillsData } from "../data/skills";
+import { SkillGroup } from "../data/skills";
+import React, { useState } from "react";
 import Lottie from 'lottie-react'
 import frontEndDevAnimation from '../assets/lotties/front-end-lottie-purple.json';
 // import rocketAnimation from '../assets/lotties/rocket-purple.json';
-
+import SearchInput from "./SearchInput";
+import NoData from "./NoData";
 const Skills = () => {
+  const [skillGroups, setSkillGroups] = useState<Array<SkillGroup>>(SkillsData)
+
+  const handleSearch = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const searchText = event.target.value
+    if (searchText === "") {
+      setSkillGroups(SkillsData)
+      return
+    }
+    
+    const filtered = SkillsData.map(skillGroup => ({
+      ...skillGroup,
+      skills: skillGroup.skills.filter(skill =>
+          skill.name.toLowerCase().includes(searchText.toLowerCase())
+      )
+  })).filter(skillGroup => skillGroup.skills.length > 0);
+  
+    setSkillGroups(filtered);
+  }
+
   return (
     <section id="skills" className="bg-indigo-600 dark:bg-slate-800 pb-20">
       <div className="card relative top-56 ssm:pt-10 pb-10 sssm:mx-10 lg:mx-20 z-40">
           <div className="text-center">
-            <div >
-              <h2 className="sections-title">Skills</h2>
+            <div className="relative flex flex-col justify-center items-center mb-4 ">
+              <h2 className="sections-title mb-4">Skills</h2>
+              <SearchInput onChange={handleSearch}/>
+
             </div>
+            
             <div className="flex sssm:flex-col ssm:flex-col lg:flex-row w-full sssm:space-x-0 ssm:space-x-0 lg:space-x-10 sssm:space-y-10 ssm:space-y-10 lg:space-y-0 justify-center z-40">
-              {skillGroups.map((group, index) => (
+              {skillGroups && skillGroups.length > 0 ? skillGroups.map((group, index) => (
                 <React.Fragment key={index}>
                   <table className="h-fit sssm:w-full ssm:w-full lg:w-1/4">
                     <tbody>
@@ -33,7 +57,9 @@ const Skills = () => {
                     </tbody>
                   </table>
                 </React.Fragment>
-              ))}
+              )) : 
+              <NoData
+              message="Sorry, but I don't have that skill yet"/>}
             </div>
             <Lottie
               loop={true}

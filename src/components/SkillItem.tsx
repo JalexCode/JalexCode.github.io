@@ -3,7 +3,7 @@ import ProgressBar from "./ProgressBar";
 import { clasificate } from "../data/util";
 
 interface SkillItemProps {
-    image: string // Tipo JSX.Element para el elemento SVG
+    image: string
     text: string;
     percent: number;
     bgColor?: string;
