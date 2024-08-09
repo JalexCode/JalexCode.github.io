@@ -17,9 +17,9 @@ export type ExperienceType = {
 export const experience: Array<ExperienceType> = [
     {
         color: "rgb(150, 124, 244)",
-        workplaceName: 'Mao Consulting',
-        workingPeriod: 'Feb 2024 - Now',
-        place: 'Spain',
+        workplaceName: 'Freelancer',
+        workingPeriod: 'Feb 2024 - Aug 2024',
+        place: 'Spain (Remote)',
         time: 'Fulltime',
         role: 'Frontend Developer',
         description: 'Building the new MAO Consulting web platform. As part of a team of developers, we used the agile Scrum methodology to work on this project. Use NextJs, Tailwind, React, Typescript, Flowbite, i18next and more.',

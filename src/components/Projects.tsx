@@ -11,7 +11,7 @@ const Projects = () => {
       <div className="sssm:flex ssm:flex lg:grid sssm:flex-col ssm:flex-col lg:grid-cols-2 sssm:gap-24 ssm:gap-24 lg:gap-10 sssm:mt-10 ssm:mt-10 lg:mt-0 z-1">
         <Bounce triggerOnce>
           {projects.map((project, index) => (
-            <ProjectCard key={index} project={project} />
+            <ProjectCard key={index} project={project} idx={index} />
           ))}
         </Bounce>
       </div>

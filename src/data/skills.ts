@@ -19,7 +19,7 @@ export const skillGroups: Array<SkillGroup> = [
                 name: 'NextJs',
                 iconPath: '/images/next-js.svg',
                 rating: 80,
-                color: "gray",
+                color: "blue",
             },
             {
                 name: 'React',
@@ -39,18 +39,18 @@ export const skillGroups: Array<SkillGroup> = [
                 rating: 30,
                 color: "red",
             },
-            {
-                name: 'Svelte',
-                iconPath: '/images/svelte.svg',
-                rating: 50,
-                color: "orange",
-            },
-            {
-                name: 'Laravel',
-                iconPath: '/images/laravel.svg',
-                rating: 30,
-                color: "red",
-            },
+            // {
+            //     name: 'Svelte',
+            //     iconPath: '/images/svelte.svg',
+            //     rating: 50,
+            //     color: "orange",
+            // },
+            // {
+            //     name: 'Laravel',
+            //     iconPath: '/images/laravel.svg',
+            //     rating: 30,
+            //     color: "red",
+            // },
             {
                 name: 'Android',
                 iconPath: '/images/android-logomark.svg',
@@ -157,7 +157,7 @@ export const skillGroups: Array<SkillGroup> = [
                 name: 'GitHub',
                 iconPath: '/images/github.svg',
                 rating: 50,
-                color: "gray",
+                color: "blue",
             },
         ]
     },

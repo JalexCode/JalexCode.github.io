@@ -37,10 +37,11 @@ const Skills = () => {
 
             </div>
             
-            <div className="flex sssm:flex-col ssm:flex-col lg:flex-row w-full sssm:space-x-0 ssm:space-x-0 lg:space-x-10 sssm:space-y-10 ssm:space-y-10 lg:space-y-0 justify-center z-40">
+            <div className="flex sssm:flex-col ssm:flex-col lg:flex-row w-full sssm:space-x-0 ssm:space-x-0 lg:space-x-10 sssm:space-y-10 ssm:space-y-10 lg:space-y-0 justify-center z-40
+            lg:overflow-y-hidden overflow-y-auto h-full lg:max-h-full max-h-dvh">
               {skillGroups && skillGroups.length > 0 ? skillGroups.map((group, index) => (
                 <React.Fragment key={index}>
-                  <table className="h-fit sssm:w-full ssm:w-full lg:w-1/4">
+                  <table className="h-full sssm:w-full ssm:w-full lg:w-1/4">
                     <tbody>
                       <tr>
                         <td>

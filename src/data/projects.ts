@@ -1,4 +1,15 @@
-import { Project } from "./projectsInterface";
+export interface Project {
+    name: string;
+    type: string;
+    iconPath?: string;
+    markdownDescription: string;
+    usedTechs?: Array<string>;
+    screenShots?: Array<string>;
+    prodUrl?: {
+        name: string;
+        url: string;
+    }[];
+}
 
 const ACuantoEstaDescription =
 `
@@ -25,7 +36,35 @@ const PortalUsuarioDescription =
 **Portal Usuario** is an Android application that allows cuban users to use in an easily and friendly way Cubacel services.
 `;
 
+const MaoConsultingDescription =
+`
+**Mao Consulting** is a computer platform for identifying the legal requirements that companies must comply with, evaluating their compliance, and document management of waste, among other services..
+`;
+
 const projects: Array<Project> = [
+    {
+        name: 'Mao Consulting',
+        type: 'Private',
+        markdownDescription: MaoConsultingDescription,
+        iconPath: '/images/mao_rounded.png',
+        usedTechs: [
+            "Web App",
+            "NextJs 14",
+            "React",
+            "TypeScript",
+            "TailwindCSS",
+            "Flowbite",
+            "TanStack Table",
+            "i18next",
+        ],
+        screenShots: [
+            '/images/mao/1.png',
+            '/images/mao/2.png',
+            '/images/mao/3.png',
+        ],
+        // prodUrl: [
+        //     {name: 'Website', url: 'https://github.com/JalexCode/mao-consulting'}]
+    },
     {
         name: 'Visuales UCLV Explorer',
         type: 'Open Source',
@@ -39,11 +78,14 @@ const projects: Array<Project> = [
             "Java",
         ],
         screenShots: [
-            '/images/screenshots/visuales/1.png',
-            '/images/screenshots/visuales/2.jpg',
-            '/images/screenshots/visuales/3.jpg',
-            '/images/screenshots/visuales/4.jpg',
-        ]
+            '/images/visuales/1.png',
+            '/images/visuales/2.jpg',
+            '/images/visuales/3.jpg',
+            '/images/visuales/4.jpg',
+        ],
+        prodUrl: [
+            {name: 'GitHub', url: 'https://github.com/JalexCode/VisualesUCLVExplorer'},
+            {name: 'Apklis', url: 'https://www.apklis.cu/application/com.jalexcode.visualesuclvexplorer'}]
     },
     {
         name: 'Apklis4Devs',
@@ -56,45 +98,48 @@ const projects: Array<Project> = [
             "Retrofit",
         ],
         screenShots: [
-            '/images/screenshots/apklis4devs/1.jpg',
-            '/images/screenshots/apklis4devs/2.jpg',
-            '/images/screenshots/apklis4devs/3.jpg',
-            '/images/screenshots/apklis4devs/4.jpg',
-        ]
-    },
-    {
-        name: '¿A cuánto está?',
-        type: 'Open Source',
-        markdownDescription: ACuantoEstaDescription,
-        iconPath: '/images/a-cuanto-esta.png',
-        usedTechs: [
-            "Browser",
-            "Extension",
-            "React",
-            "TypeScript",
-            "Plasmo",
+            '/images/apklis4devs/1.jpg',
+            '/images/apklis4devs/2.jpg',
+            '/images/apklis4devs/3.jpg',
+            '/images/apklis4devs/4.jpg',
         ],
-        screenShots: [
-            '/images/screenshots/acuanto/1.jpg',
-            '/images/screenshots/acuanto/2.jpg',
-            '/images/screenshots/acuanto/3.jpg',
-        ]
+        prodUrl: [
+            {name: 'GitHub', url: 'https://github.com/JalexCode/Apklis4Devs'},]
+            // {name: 'Apklis', url: 'https://www.apklis.cu/application/com.jalexcode.apklis4devs'}]
     },
-    {
-        name: 'Rubiera',
-        type: 'Open Source',
-        markdownDescription: RubieraDescription,
-        iconPath: '/images/rubiera.png',
-        usedTechs: [
-            "Desktop",
-            "Python",
-            "PyQt5",
-            "WebScrapping"
-        ],
-        screenShots: [
-            '/images/screenshots/rubiera/1.png'
-        ]
-    },
+    // {
+    //     name: '¿A cuánto está?',
+    //     type: 'Open Source',
+    //     markdownDescription: ACuantoEstaDescription,
+    //     iconPath: '/images/a-cuanto-esta.png',
+    //     usedTechs: [
+    //         "Browser",
+    //         "Extension",
+    //         "React",
+    //         "TypeScript",
+    //         "Plasmo",
+    //     ],
+    //     screenShots: [
+    //         '/images/acuanto/1.jpg',
+    //         '/images/acuanto/2.jpg',
+    //         '/images/acuanto/3.jpg',
+    //     ]
+    // },
+    // {
+    //     name: 'Rubiera',
+    //     type: 'Open Source',
+    //     markdownDescription: RubieraDescription,
+    //     iconPath: '/images/rubiera.png',
+    //     usedTechs: [
+    //         "Desktop",
+    //         "Python",
+    //         "PyQt5",
+    //         "WebScrapping"
+    //     ],
+    //     screenShots: [
+    //         '/images/rubiera/1.png'
+    //     ]
+    // },
     {
         name: 'Portal Usuario',
         type: 'Individual',
@@ -106,8 +151,10 @@ const projects: Array<Project> = [
             "WebScrapping",
         ],
         screenShots: [
-            '/images/screenshots/portal/1.jpg'
-        ]
+            '/images/portal/1.jpg'
+        ],
+        prodUrl: [
+            {name: 'Apklis', url: 'https://www.apklis.cu/application/com.marlon.portalusuario'}]
     },
 
 ];

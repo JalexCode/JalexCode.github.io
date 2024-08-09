@@ -11,13 +11,13 @@ const DarkModeContext = createContext<DarkModeContextProps | undefined>(undefine
 export const useDarkMode = () => {
   const context = useContext(DarkModeContext);
   if (!context) {
-    throw new Error('useDarkMode debe usarse dentro de un DarkModeProvider');
+    throw new Error('useDarkMode must be used inside a DarkModeProvider');
   }
   return context;
 };
 
 export const DarkModeProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(true);
 
   const toggleDarkMode = () => {
     setIsDarkMode(!isDarkMode);
