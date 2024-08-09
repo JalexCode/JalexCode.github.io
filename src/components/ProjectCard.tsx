@@ -11,12 +11,12 @@ interface ProjectCardProps {
 const ProjectCard = ({ project, idx }: ProjectCardProps) => {
     return (
         <div className='relative z-1 project-card sssm:justify-center ssm:justify-center sssm:items-center ssm:items-center lg:justify-around flex sssm:flex-col ssm:flex-col lg:flex-row p-5 hover-trigger transition-all hover:scale-105 shadow-2xl hover:shadow-black'>
-            {/* Cinta roja "Most recent" */}
+            {/* Cinta roja "Latest" */}
             <div className="absolute top-0 right-0">
                 {idx === 0 &&
-                    <div className="bg-red-600 text-white text-xs font-bold uppercase px-2 py-1 transform rotate-45 translate-x-7 translate-y-6 w-full"
-                        style={{ clipPath: 'polygon(20% 0, 81% 0, 100% 100%, 0 100%)' }}>
-                        <span className='m-4'>Most recent</span>
+                    <div className="bg-red-600 text-white text-xs font-bold uppercase px-2 py-1 transform rotate-45 translate-x-6 translate-y-3 w-full"
+                        style={{ clipPath: 'polygon(25% 0, 75% 0, 100% 100%, 0 100%)' }}>
+                        <span className='m-5'>Latest</span>
                     </div>
                 }
 
