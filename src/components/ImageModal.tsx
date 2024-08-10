@@ -13,6 +13,8 @@ const ImageModal: React.FC<ImageModalProps> = ({ imageSrc, onClose }) => {
     >
       <div className="relative" onClick={(e) => e.stopPropagation()}>
         <img
+          loading="lazy"
+          decoding='async'
           src={imageSrc}
           alt="Modal Content"
           className="max-w-full max-h-[90vh] rounded-2xl"

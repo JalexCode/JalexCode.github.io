@@ -47,7 +47,7 @@ const ProjectCard = ({ project, idx }: ProjectCardProps) => {
                         <div className='text-slate-400 dark:text-slate-300 text-sm mt-auto'>Product Links:</div>
                         <div className='flex flex-wrap gap-4 sssm:justify-center ssm:justify-center lg:justify-start sssm:items-center lg:items-start'>
                             {project.prodUrl?.map((link, index) => (
-                                <div key={index} className='text-blue-600 dark:text-blue-300 flex flex-row gap-1 items-center justify-center cursor-pointer' onClick={() => window.open(link.url)}>
+                                <div key={index} className='text-blue-600 dark:text-blue-300 hover:text-blue-800 dark:hover:text-slate-300 flex flex-row gap-1 items-center justify-center cursor-pointer' onClick={() => window.open(link.url)}>
                                     <GoLinkExternal />
                                     <span>{link.name}</span>
                                 </div>
@@ -76,8 +76,10 @@ const ProjectCard = ({ project, idx }: ProjectCardProps) => {
                                     {project.screenShots?.map((screenshot, index) => (
                                         <div key={index} className='screenshot-badges'>
                                             <img src={screenshot}
+                                                loading="lazy"
+                                                decoding='async'
                                                 alt='Screenshot Thumbnail'
-                                                onClick={()=>openModal(screenshot)}
+                                                onClick={() => openModal(screenshot)}
                                                 className='rounded-lg h-24 min-h-24 object-cover transition-all' />
                                         </div>
                                     ))}

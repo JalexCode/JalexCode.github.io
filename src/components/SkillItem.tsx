@@ -12,10 +12,11 @@ interface SkillItemProps {
 const SkillItem = ({ image, text, percent, bgColor }: SkillItemProps) => {
     const [pressed, setPressed] = useState<boolean>(false)
     return (
-        <div className="skill-item" title={clasificate(percent)} onClick={()  =>  setPressed(!pressed)}> 
-            <img src={image} className="w-10 h-10 mr-1" />
+        <div className="skill-item" title={clasificate(percent)} onClick={() => setPressed(!pressed)}>
+            <img src={image} className="w-10 h-10 mr-1" loading="lazy"
+                decoding='async' />
             {/* <span className="mb-1 text-start text-lg text-slate-700 dark:dark:text-slate-300 text">{text}</span> */}
-            <ProgressBar title={text} percent={percent} visible={true} color={bgColor}/>
+            <ProgressBar title={text} percent={percent} visible={true} color={bgColor} />
         </div>
     )
 }
