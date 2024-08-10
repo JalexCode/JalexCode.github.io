@@ -1,6 +1,10 @@
 import ReactMarkdown from 'react-markdown';
 import { Project } from '../data/projects';
 import { GoLinkExternal } from "react-icons/go";
+import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
+import { useState } from 'react';
+import { Bounce } from 'react-awesome-reveal';
+import ImageModal from './ImageModal';
 // import { AiOutlineGithub } from 'react-icons/ai';
 
 interface ProjectCardProps {
@@ -9,8 +13,17 @@ interface ProjectCardProps {
 }
 
 const ProjectCard = ({ project, idx }: ProjectCardProps) => {
+    const [isScreenshotsExpanded, setIsScreenshotsExpanded] = useState<boolean>(false);
+    const [selectedImage, setSelectedImage] = useState<string | null>(null);
+
+    const openModal = (imageSrc: string) => setSelectedImage(imageSrc);
+    const closeModal = () => setSelectedImage(null);
     return (
-        <div className='relative z-1 project-card sssm:justify-center ssm:justify-center sssm:items-center ssm:items-center lg:justify-around flex sssm:flex-col ssm:flex-col lg:flex-row p-5 hover-trigger transition-all hover:scale-105 shadow-2xl hover:shadow-black'>
+        <div className='relative z-1 project-card
+        sssm:justify-center ssm:justify-center sssm:items-center ssm:items-center lg:justify-around
+        flex sssm:flex-col ssm:flex-col lg:flex-row p-5
+        hover-trigger transition-all hover:scale-105 shadow-2xl hover:shadow-black
+        '>
             {/* Cinta roja "Latest" */}
             <div className="absolute top-0 right-0">
                 {idx === 0 &&
@@ -50,6 +63,30 @@ const ProjectCard = ({ project, idx }: ProjectCardProps) => {
                         ))}
                     </div>
                 </div>
+                {project.screenShots &&
+                    <div className='flex flex-col gap-2'>
+                        <div className='flex flex-row items-center cursor-pointer mt-2 mb-2' onClick={() => setIsScreenshotsExpanded(!isScreenshotsExpanded)}>
+                            <div className='text-slate-400 dark:text-slate-300 text-sm'>Screenshots</div>
+                            {isScreenshotsExpanded ? <IoIosArrowUp className={"ml-2 h-4 w-4 text-slate-400 dark:text-slate-300"} /> :
+                                <IoIosArrowDown className={"ml-2 h-4 w-4 text-slate-400 dark:text-slate-300"} />}
+                        </div>
+                        {isScreenshotsExpanded &&
+                            <div className='flex flex-wrap gap-2 sssm:justify-center ssm:justify-center lg:justify-start sssm:items-center lg:items-start'>
+                                <Bounce triggerOnce>
+                                    {project.screenShots?.map((screenshot, index) => (
+                                        <div key={index} className='screenshot-badges'>
+                                            <img src={screenshot}
+                                                alt='Screenshot Thumbnail'
+                                                onClick={()=>openModal(screenshot)}
+                                                className='rounded-lg h-24 min-h-24 object-cover transition-all' />
+                                        </div>
+                                    ))}
+                                </Bounce>
+                            </div>}
+                        {selectedImage && (
+                            <ImageModal imageSrc={selectedImage} onClose={closeModal} />
+                        )}
+                    </div>}
             </div>
             {/* <div className='absolute bottom-0 left-0 right-0 bg-black justify-center items-center rounded-br-3xl rounded-bl-3xl h-0 transition-all hover-bottom-bar-target'>
                 <AiOutlineGithub className='text-white mx-auto my-auto' size={24} />

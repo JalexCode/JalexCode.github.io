@@ -11,10 +11,10 @@ export interface Project {
     }[];
 }
 
-const ACuantoEstaDescription =
-`
-**¿A cuánto está?** is a browser extension that will show you the current exchange value of the Dollar, Euro and MLC in Cuba.
-`;
+// const ACuantoEstaDescription =
+// `
+// **¿A cuánto está?** is a browser extension that will show you the current exchange value of the Dollar, Euro and MLC in Cuba.
+// `;
 
 const VisualesUclvExplorerDescription =
 `
@@ -26,10 +26,10 @@ const Apklis4DevsDescription =
 **Apklis4Devs** is a client application for Android that shows the user in a friendly way useful information about their [Apklis Developer](https://admin.apklis.cu/login) account.
 `;
 
-const RubieraDescription =
-`
-**Rubiera** is a desktop application that shows Cuba weather information.
-`;
+// const RubieraDescription =
+// `
+// **Rubiera** is a desktop application that shows Cuba weather information.
+// `;
 
 const PortalUsuarioDescription =
 `
@@ -38,7 +38,7 @@ const PortalUsuarioDescription =
 
 const MaoConsultingDescription =
 `
-**Mao Consulting** is a computer platform for identifying the legal requirements that companies must comply with, evaluating their compliance, and document management of waste, among other services..
+This is a computer platform for identifying the legal requirements that companies must comply with, evaluating their compliance, and document management of waste, among other services..
 `;
 
 const projects: Array<Project> = [
@@ -84,28 +84,8 @@ const projects: Array<Project> = [
             '/images/visuales/4.jpg',
         ],
         prodUrl: [
-            {name: 'GitHub', url: 'https://github.com/JalexCode/VisualesUCLVExplorer'},
+            {name: 'GitHub', url: 'https://github.com/JalexCode/VisualesUCLV-Desktop'},
             {name: 'Apklis', url: 'https://www.apklis.cu/application/com.jalexcode.visualesuclvexplorer'}]
-    },
-    {
-        name: 'Apklis4Devs',
-        type: 'Individual',
-        markdownDescription: Apklis4DevsDescription,
-        iconPath: '/images/apklis4devs.png',
-        usedTechs: [
-            "Android",
-            "Java",
-            "Retrofit",
-        ],
-        screenShots: [
-            '/images/apklis4devs/1.jpg',
-            '/images/apklis4devs/2.jpg',
-            '/images/apklis4devs/3.jpg',
-            '/images/apklis4devs/4.jpg',
-        ],
-        prodUrl: [
-            {name: 'GitHub', url: 'https://github.com/JalexCode/Apklis4Devs'},]
-            // {name: 'Apklis', url: 'https://www.apklis.cu/application/com.jalexcode.apklis4devs'}]
     },
     // {
     //     name: '¿A cuánto está?',
@@ -142,7 +122,7 @@ const projects: Array<Project> = [
     // },
     {
         name: 'Portal Usuario',
-        type: 'Individual',
+        type: 'Individual (Collaboration)',
         markdownDescription: PortalUsuarioDescription,
         iconPath: '/images/portal.png',
         usedTechs: [
@@ -156,7 +136,26 @@ const projects: Array<Project> = [
         prodUrl: [
             {name: 'Apklis', url: 'https://www.apklis.cu/application/com.marlon.portalusuario'}]
     },
-
+    {
+        name: 'Apklis4Devs',
+        type: 'Individual',
+        markdownDescription: Apklis4DevsDescription,
+        iconPath: '/images/apklis4devs.png',
+        usedTechs: [
+            "Android",
+            "Java",
+            "Retrofit",
+        ],
+        screenShots: [
+            '/images/apklis4devs/1.jpg',
+            '/images/apklis4devs/2.jpg',
+            '/images/apklis4devs/3.jpg',
+            '/images/apklis4devs/4.jpg',
+        ],
+        // prodUrl: [
+        //     {name: 'GitHub', url: 'https://github.com/JalexCode/Apklis4Devs'},
+        //     {name: 'Apklis', url: 'https://www.apklis.cu/application/com.jalexcode.apklis4devs'}]
+    },
 ];
 
 export default projects;
