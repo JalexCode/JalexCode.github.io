@@ -15,7 +15,7 @@ const Performance = () => {
     return (
         <section id="performances" className='justify-center items-center bg-indigo-600 dark:bg-slate-800'>
             {/* <h2 className="mb-10 lg:text-5xl ssm:text-3xl font-bold text-center text-white dark:text-slate-400">These are my main skills🏆</h2> */}
-            <div className="flex flex-row gap-10 justify-center w-full">
+            <div className="flex flex-col lg:flex-row md:flex-row gap-10 justify-center w-full">
             <Card title="Web Development 👨🏻‍💻" description="Building and maintaining the website, including front-end and back-end development, as well as content management." />
                 <Card title="UI Design 🖥" description="Creating user interfaces, including user experience design, interaction design, and visual design." />
                 <Card title="Graphic Design 🖌" description="Drawing and designing logos, icons, and other visual elements for the website." />
