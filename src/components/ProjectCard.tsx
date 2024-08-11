@@ -65,7 +65,7 @@ const ProjectCard = ({ project, idx }: ProjectCardProps) => {
                 </div>
                 {project.screenShots &&
                     <div className='flex flex-col gap-2'>
-                        <div className='flex flex-row items-center cursor-pointer mt-2 mb-2' onClick={() => setIsScreenshotsExpanded(!isScreenshotsExpanded)}>
+                        <div className='flex flex-row items-center cursor-pointer mt-2 mb-2 ' onClick={() => setIsScreenshotsExpanded(!isScreenshotsExpanded)}>
                             <div className='text-slate-400 dark:text-slate-300 text-sm'>Screenshots</div>
                             {isScreenshotsExpanded ? <IoIosArrowUp className={"ml-2 h-4 w-4 text-slate-400 dark:text-slate-300"} /> :
                                 <IoIosArrowDown className={"ml-2 h-4 w-4 text-slate-400 dark:text-slate-300"} />}

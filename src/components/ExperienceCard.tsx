@@ -8,7 +8,7 @@ interface ExperienceCardProps {
 const ExperienceCard = ({ experience }: ExperienceCardProps) => {
     const [pressed, setPressed] = useState<boolean>(false)
     return (
-        <div className={`bg-white dark:bg-slate-500 rounded-3xl shadow-2xl w-1/3 hover:scale-105 hover:shadow-black transition-all duration-500 ease-in-out`}>
+        <div className={`bg-white dark:bg-slate-500 rounded-3xl shadow-2xl lg:w-1/3 md:w-1/2 w-full hover:scale-105 hover:shadow-black transition-all duration-500 ease-in-out`}>
             <div
                 className="h-36 rounded-tr-3xl rounded-tl-3xl shadow-xl"
                 style={{

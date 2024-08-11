@@ -6,6 +6,7 @@ import Experience from './Experience'
 import Footer from './Footer'
 import { useEffect } from 'react'
 import { useDarkMode } from '../context/DarkModeContext'
+import Performance from './Performance'
 
 const Main = () => {
     const { isDarkMode } = useDarkMode();
@@ -23,6 +24,7 @@ const Main = () => {
             <NavBar />
             <div>
                 <Hero />
+                {/* <Performance /> */}
                 <Skills />
                 <Projects />
                 <Experience />
