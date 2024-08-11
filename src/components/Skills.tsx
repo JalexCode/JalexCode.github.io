@@ -7,6 +7,7 @@ import frontEndDevAnimation from '../assets/lotties/front-end-lottie-purple.json
 // import rocketAnimation from '../assets/lotties/rocket-purple.json';
 import SearchInput from "./SearchInput";
 import NoData from "./NoData";
+import Performance from "./Performance";
 const Skills = () => {
   const [skillGroups, setSkillGroups] = useState<Array<SkillGroup>>(SkillsData)
 
@@ -28,11 +29,13 @@ const Skills = () => {
   }
 
   return (
-    <section id="skills" className="bg-indigo-600 dark:bg-slate-800 pb-20">
-      <div className="card relative top-56 ssm:pt-10 pb-10 sssm:mx-10 lg:mx-20 z-40">
+    <section id="skills" className="bg-indigo-600 dark:bg-slate-800 pb-20 flex flex-col">
+      <div className="relative top-56 ssm:pt-10 pb-10 sssm:mx-10 lg:mx-20 gap-10 flex flex-col">
+      <Performance />
+      <div className="card z-40">
           <div className="text-center">
             <div className="relative flex flex-col justify-center items-center mb-4 ">
-              <h2 className="sections-title mb-4">Skills</h2>
+              <h2 className="text-2xl font-bold dark:text-white text-gray-700 mb-4">Dev skills</h2>
               <SearchInput onChange={handleSearch}/>
 
             </div>
@@ -71,7 +74,8 @@ const Skills = () => {
             />
           </div>
 
-        </div>
+      </div>
+      </div>
 
     </section>
   );

@@ -1,49 +1,27 @@
+const Card = ({ title, description }: { title: string, description: string }) => {
+    return (
+        <div className="project-card p-8 items-center justify-center shadow-2xl flex flex-col gap-2">
+            <h2 className="text-2xl font-bold dark:text-white text-gray-700">{title}</h2>
+            <div className="flex flex-col items-center">
+                <p className="text-slate-600 dark:text-slate-300 mt-2">
+                    {description}
+                </p>
+            </div>
+        </div>
+    )
+}
+
 const Performance = () => {
-  return (
-    <section id="performances" className='pt-40 my-40 sssm:px-10 lg:px-20 justify-center items-center w-fit'>
-      <h2 className="sections-title mb-10 text-2xl font-bold">Performances</h2>
-      <div className="flex flex-row justify-center">
-        <div className="flex flex-col items-center">
-          <h3 className="text-xl font-bold">
-            <span className="text-blue-600 dark:text-blue-300">
-              <span className="dynamic-fill-color">
-                <span className="dynamic-fill-color-2">
-                  <span className="rocket">🚀</span>
-                </span>
-              </span>
-            </span>
-            Javascript
-          </h3>
-          <p className="text-slate-600 dark:text-slate-300 mt-2">
-            Javascript is a programming language that is primarily used for
-            building web applications. It is a versatile language that can be
-            used for both front-end and back-end development. JavaScript is
-            supported by all modern web browsers and is an essential skill for
-            web developers.
-          </p>
-        </div>
-        <div className="flex flex-col items-center">
-          <h3 className="text-xl font-bold">
-            <span className="text-blue-600 dark:text-blue-300">
-              <span className="dynamic-fill-color">
-                <span className="dynamic-fill-color-2">
-                  <span className="rocket">🚀</span>
-                </span>
-              </span>
-            </span>
-            Python
-          </h3>
-          <p className="text-slate-600 dark:text-slate-300 mt-2">
-            Python is a high-level, interpreted programming language that is
-            widely used for web development. It is known for its simplicity and
-            readability, making it a popular choice for beginners and experienced
-            developers alike. Python is supported by all major web browsers and
-            is an essential skill for web developers.
-          </p>
-        </div>
-      </div>
-    </section>
-  )
+    return (
+        <section id="performances" className='justify-center items-center bg-indigo-600 dark:bg-slate-800'>
+            {/* <h2 className="mb-10 lg:text-5xl ssm:text-3xl font-bold text-center text-white dark:text-slate-400">These are my main skills🏆</h2> */}
+            <div className="flex flex-row gap-10 justify-center w-full">
+            <Card title="Web Development 👨🏻‍💻" description="Building and maintaining the website, including front-end and back-end development, as well as content management." />
+                <Card title="UI Design 🖥" description="Creating user interfaces, including user experience design, interaction design, and visual design." />
+                <Card title="Graphic Design 🖌" description="Drawing and designing logos, icons, and other visual elements for the website." />
+            </div>
+        </section>
+    )
 }
 
 export default Performance
