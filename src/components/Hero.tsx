@@ -8,7 +8,7 @@ import { Fade, Slide } from "react-awesome-reveal";
 const Hero = () => {
 
     return (
-        <section id="aboutme" className='bg-indigo-600 dark:bg-slate-800 sssm:pt-32 ssm:pt-28 lg:pt-48 sssm:pb-0 lg:pb-60
+        <section id="aboutme" className='bg-indigo-600 dark:bg-slate-800 sssm:pt-32 ssm:pt-28 lg:pt-48 sssm:pb-0
         lg:px-0 md:px-0 sm:px-10 ssm:px-10 sssm:px-10'>
             <Slide direction='up' triggerOnce>
                 <Fade triggerOnce>

@@ -9,8 +9,10 @@ body {
 }
 
 @font-face {
-    font-family: 'Ubuntu';
-    src: url('/src/assets/fonts/Ubuntu-Regular.ttf') format('truetype');
+    /* font-family: 'Ubuntu';
+    src: url('/src/assets/fonts/Ubuntu-Regular.ttf') format('truetype'); */
+    font-family: 'Figtree Variable', sans-serif;
+    src: url(@fontsource-variable/figtree/files/figtree-latin-wght-normal.woff2) format('woff2-variations');
 }
 
 .social-links {
@@ -73,7 +75,7 @@ hr {
 }
 
 .sections-title {
-    @apply lg:text-5xl ssm:text-3xl font-bold text-gray-700 dark:text-slate-300 text-center
+    @apply lg:text-9xl md:text-9xl text-5xl font-bold lg:text-start md:text-start text-center
 }
 
 @keyframes fadeInUp {

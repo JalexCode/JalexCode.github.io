@@ -17,26 +17,28 @@ const Skills = () => {
       setSkillGroups(SkillsData)
       return
     }
-    
+
     const filtered = SkillsData.map(skillGroup => ({
       ...skillGroup,
       skills: skillGroup.skills.filter(skill =>
-          skill.name.toLowerCase().includes(searchText.toLowerCase())
+        skill.name.toLowerCase().includes(searchText.toLowerCase())
       )
-  })).filter(skillGroup => skillGroup.skills.length > 0);
-  
+    })).filter(skillGroup => skillGroup.skills.length > 0);
+
     setSkillGroups(filtered);
   }
 
   return (
     <section id="skills" className="bg-indigo-600 dark:bg-slate-800 pb-20 flex flex-col">
       <div className="relative top-56 ssm:pt-10 pb-10 sssm:mx-10 lg:mx-20 gap-10 flex flex-col">
-      <Performance />
-      <div className="card z-40">
+        <h1 className="sections-title dark:opacity-10 text-white opacity-15">Skills</h1>
+    
+        <Performance />
+        <div className="card z-40">
           <div className="text-center">
             <div className="relative flex flex-col justify-center items-center mb-4 ">
               <h2 className="text-2xl font-bold dark:text-white text-gray-700 mb-4">Dev skills</h2>
-              <SearchInput onChange={handleSearch}/>
+              <SearchInput onChange={handleSearch} />
 
             </div>
             {/* lg:overflow-y-hidden overflow-y-auto h-full lg:max-h-full max-h-dvh */}
@@ -61,9 +63,9 @@ const Skills = () => {
                     </tbody>
                   </table>
                 </React.Fragment>
-              )) : 
-              <NoData
-              message="Sorry, but I don't have that skill yet"/>}
+              )) :
+                <NoData
+                  message="Sorry, but I don't have that skill yet" />}
             </div>
             <Lottie
               loop={true}
@@ -74,7 +76,7 @@ const Skills = () => {
             />
           </div>
 
-      </div>
+        </div>
       </div>
 
     </section>

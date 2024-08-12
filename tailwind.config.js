@@ -13,6 +13,7 @@ export default {
     extend: {
       fontFamily: {
         'sans': ['Ubuntu'],
+        'roboto': ['Roboto', 'sans-serif'],
       },
       keyframes: {
         moveUp: {

@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "@emotion/react": "^11.11.4",
+    "@fontsource-variable/figtree": "^5.0.21",
+    "@fontsource/roboto": "^5.0.14",
     "google-search-results-nodejs": "^2.1.0",
     "lottie-react": "^2.4.0",
     "react": "^18.2.0",
