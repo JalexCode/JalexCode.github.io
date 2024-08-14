@@ -30,7 +30,7 @@ const Skills = () => {
 
   return (
     <section id="skills" className="bg-indigo-600 dark:bg-slate-800 pb-20 flex flex-col">
-      <div className="relative top-56 ssm:pt-10 pb-10 sssm:mx-10 lg:mx-20 gap-10 flex flex-col">
+      <div className="relative top-56 pb-10 sssm:mx-10 lg:mx-20 gap-10 flex flex-col">
         <h1 className="sections-title dark:opacity-10 text-white opacity-15">Skills</h1>
     
         <Performance />

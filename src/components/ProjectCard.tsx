@@ -22,8 +22,7 @@ const ProjectCard = ({ project, idx }: ProjectCardProps) => {
         <div className='relative z-1 project-card
         sssm:justify-center ssm:justify-center sssm:items-center ssm:items-center lg:justify-around
         flex sssm:flex-col ssm:flex-col lg:flex-row p-5
-        hover-trigger transition-all hover:scale-105 shadow-2xl hover:shadow-black
-        '>
+        hover-trigger transition-all hover:scale-105 shadow-2xl hover:shadow-black'>
             {/* Cinta roja "Latest" */}
             <div className="absolute top-0 right-0">
                 {idx === 0 &&
