@@ -60,9 +60,29 @@ const Hero = () => {
                             />
                         </div>
                         {/* My picture */}
-                        <div className='sssm:w-full ssm:w-full md:w-full lg:w-1/3 justify-center items-center sssm:mb-5 ssm:mb-5 md:mb-0 lg:mb-0 z-40'>
-                            <img decoding="async" data-nimg="1" src={personalInfo.heroPic} loading='lazy' alt='JalexCode Picture' width={250} height={250} className='rounded-full w-full border-0 transition-all duration-300 ease-in-out hover:border-8 hover:border-white' />
+                        <div className='group relative lg:w-[30%] ssm:w-[80%] z-40'>
+                            <img
+                                decoding="async"
+                                data-nimg="1"
+                                src='/bg.png'
+                                loading='lazy'
+                                alt='JalexCode Picture'
+                                className='absolute inset-0 rounded-full w-full object-cover transition-all ease-in-out duration-500 group-hover:scale-105 group-hover:drop-shadow-md
+                                lg:top-6 ssm:top-8'
+                            />
+                            <img
+                                decoding="async"
+                                data-nimg="1"
+                                src='/jalex.png'
+                                loading='lazy'
+                                alt='JalexCode Picture'
+                                className='rounded-full w-full ssm:mb-6 transition-all ease-in-out duration-500 group-hover:scale-110 group-hover:-translate-y-5 group-hover:drop-shadow-md
+                                lg:-mt-[105px]
+                                ssm:-mt-[40px] ssm:group-hover:-translate-y-3'
+                                style={{ clipPath: 'inset(0 0 -20% 0)' }}
+                            />
                         </div>
+
                     </div>
                 </Fade>
             </Slide>
