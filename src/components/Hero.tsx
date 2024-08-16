@@ -8,13 +8,13 @@ import { Fade, Slide } from "react-awesome-reveal";
 const Hero = () => {
 
     return (
-        <section id="aboutme" className='bg-indigo-600 dark:bg-slate-800 sssm:pt-32 ssm:pt-28 lg:pt-48 sssm:pb-0
+        <section id="aboutme" className='bg-indigo-600 dark:bg-slate-800 sssm:pt-32 ssm:pt-28 lg:pt-36 sssm:pb-0
         lg:px-0 md:px-0 sm:px-10 ssm:px-10 sssm:px-10'>
             <Slide direction='up' triggerOnce>
                 <Fade triggerOnce>
                     <div className='flex justify-around items-center w-full 
             sssm:pt-10 ssm:pt-10 smm:pt-10 md:pt-10 lg:pt-0
-            md:space-x-10 lg:space-x-10 md:flex-row lg:flex-row sssm:flex-col-reverse ssm:flex-col-reverse text-white'>
+           md:flex-row lg:flex-row sssm:flex-col-reverse ssm:flex-col-reverse text-white'>
                         {/* About Me */}
                         <div className='sssm:w-fit ssm:w-fit lg:w-1/2 sssm:items-center ssm:items-center sssm:justify-center ssm:justify-center z-10'>
                             {/* About me && Social Links */}
@@ -56,29 +56,32 @@ const Hero = () => {
                                 loop={false}
                                 autoplay={true}
                                 animationData={reactAnimation}
-                                className='opacity-20'
+                                className='opacity-10'
                             />
                         </div>
                         {/* My picture */}
-                        <div className='group relative lg:w-[30%] ssm:w-[80%] z-40'>
+                        <div className='group relative z-40 lg:w-[29%] md:lg:w-[20%] sm:lg:w-full ssm:w-full sssm:w-full
+                        mt-0 ssm:mt-2 sssm:mt-5
+                        ssm:mb-10 sssm:mb-10
+                        '>
                             <img
                                 decoding="async"
                                 data-nimg="1"
-                                src='/bg.png'
+                                src='/profile_bg.png'
                                 loading='lazy'
                                 alt='JalexCode Picture'
                                 className='absolute inset-0 rounded-full w-full object-cover transition-all ease-in-out duration-500 group-hover:scale-105 group-hover:drop-shadow-md
-                                lg:top-6 ssm:top-8'
+                                '
                             />
                             <img
                                 decoding="async"
                                 data-nimg="1"
-                                src='/jalex.png'
+                                src='/profile_hero.png'
                                 loading='lazy'
                                 alt='JalexCode Picture'
-                                className='rounded-full w-full ssm:mb-6 transition-all ease-in-out duration-500 group-hover:scale-110 group-hover:-translate-y-5 group-hover:drop-shadow-md
-                                lg:-mt-[105px]
-                                ssm:-mt-[40px] ssm:group-hover:-translate-y-3'
+                                className='rounded-full w-full transition-all ease-in-out duration-500 group-hover:scale-110 group-hover:drop-shadow-md
+                                lg:group-hover:-translate-y-4 ssm:group-hover:-translate-y-1 sssm:group-hover:-translate-y-2
+                                -mt-1'
                                 style={{ clipPath: 'inset(0 0 -20% 0)' }}
                             />
                         </div>

@@ -28,7 +28,7 @@ const NavBar = () => {
   const { isDarkMode, toggleDarkMode } = useDarkMode();
   return (
     <>
-      <nav className='bg-indigo-600 dark:dark:bg-slate-800  px-10 py-5 sssm:py-10 ssm:py-10 sm:py-10 sssm:space-y-4 ssm:space-y-4 sm:space-y-4 h-fit w-screen sssm:w-screen ssm:w-screen sm:w-screen max-w-screen-xl backdrop-filter dark:backdrop-filter backdrop-blur-lg dark:backdrop-blur-lg bg-opacity-50 dark:bg-opacity-50 z-50 fixed'>
+      <nav className='bg-indigo-600 dark:dark:bg-slate-800  px-10 lg:py-5 md:py-5 sssm:py-10 ssm:py-10 sm:py-10 sssm:space-y-4 ssm:space-y-4 sm:space-y-4 h-fit w-screen sssm:w-screen ssm:w-screen sm:w-screen max-w-screen-xl backdrop-filter dark:backdrop-filter backdrop-blur-lg dark:backdrop-blur-lg bg-opacity-50 dark:bg-opacity-50 z-50 fixed'>
         <div className="flex justify-between items-center ssm:space-x-4 ">
           {/* X button to close menu */}
           <div className='lg:hidden md:hidden'>
