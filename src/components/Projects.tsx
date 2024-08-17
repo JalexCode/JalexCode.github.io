@@ -6,7 +6,7 @@ const Projects = () => {
   return (
     <section id="projects" className='bg-white dark:bg-slate-600 pt-40 sssm:mt-32 sm:mt-32 lg:mt-52 sssm:mx-10 ssm:mx-10 lg:mx-20 justify-center items-center w-fit relative'>
       <div className="mb-16">
-        <h2 className="sections-title dark:text-white dark:opacity-10 text-slate-300 opacity-40 ">Projects</h2>
+        <h2 className="sections-title dark:text-white dark:opacity-[15%] text-slate-300 opacity-[50%] ">Projects</h2>
       </div>
       {/* lg:columns-2 md:columns-2 sm:columns-1 ssm:columns-1 sssm:columns-1 sssm:gap-24 ssm:gap-24 lg:gap-10
       sssm:mt-10 ssm:mt-10 lg:mt-0 z-1 h-full */}
