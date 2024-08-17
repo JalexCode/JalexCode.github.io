@@ -4,9 +4,19 @@ import SocialLinks from './SocialLinks';
 import { personalInfo } from '../data/personalInfo';
 import { TypeAnimation } from 'react-type-animation';
 import { Fade, Slide } from "react-awesome-reveal";
+import { useEffect, useState } from 'react';
+import { twMerge } from 'tailwind-merge';
 
 const Hero = () => {
-
+    const [hasAnimated, setHasAnimated] = useState(false);
+    useEffect(() => {
+        if (!hasAnimated){
+            setTimeout(() => {
+                setHasAnimated(true)
+            }, 1000);
+        }
+    }, [hasAnimated])
+    
     return (
         <section id="aboutme" className='bg-indigo-600 dark:bg-slate-800 sssm:pt-32 ssm:pt-28 lg:pt-36 sssm:pb-0
         lg:px-0 md:px-0 sm:px-10 ssm:px-10 sssm:px-10'>
@@ -60,7 +70,7 @@ const Hero = () => {
                             />
                         </div>
                         {/* My picture */}
-                        <div className='group relative z-40 lg:w-[29%] md:lg:w-[20%] sm:lg:w-full ssm:w-full sssm:w-full
+                        <div className='group relative z-40 lg:w-[28%] md:lg:w-[20%] sm:lg:w-full ssm:w-full sssm:w-full
                         mt-0 ssm:mt-2 sssm:mt-5
                         ssm:mb-10 sssm:mb-10
                         '>
@@ -70,8 +80,9 @@ const Hero = () => {
                                 src='/profile_bg.png'
                                 loading='lazy'
                                 alt='JalexCode Picture'
-                                className='absolute inset-0 rounded-full w-full object-cover transition-all ease-in-out duration-500 group-hover:scale-105 group-hover:drop-shadow-md
-                                '
+                                className={twMerge(`absolute inset-0 w-full object-cover transition-transform ease-in-out duration-500
+                                lg:translate-y-0 ssm:translate-y-4 sssm:-translate-y-2`, hasAnimated && 'scale-[102%]')}
+                                style={{ transitionTimingFunction: 'cubic-bezier(0.175, 0.885, 0.32, 1.275)'}}
                             />
                             <img
                                 decoding="async"
@@ -79,10 +90,9 @@ const Hero = () => {
                                 src='/profile_hero.png'
                                 loading='lazy'
                                 alt='JalexCode Picture'
-                                className='rounded-full w-full transition-all ease-in-out duration-500 group-hover:scale-110 group-hover:drop-shadow-md
-                                lg:group-hover:-translate-y-4 ssm:group-hover:-translate-y-1 sssm:group-hover:-translate-y-2
-                                -mt-1'
-                                style={{ clipPath: 'inset(0 0 -20% 0)' }}
+                                className={twMerge(`w-full transition-transform ease-in-out duration-500
+                                -mt-1`, hasAnimated && 'scale-110 lg:-translate-y-6 lg:-translate-x-1 ssm:-translate-y-1 sssm:-translate-y-2')}
+                                style={{ clipPath: 'inset(0 0 -20% 0)', transitionTimingFunction: 'cubic-bezier(0.175, 0.885, 0.32, 1.275)' }}
                             />
                         </div>
 
