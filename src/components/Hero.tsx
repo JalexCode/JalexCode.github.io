@@ -87,7 +87,7 @@ const Hero = () => {
                             <img
                                 decoding="async"
                                 data-nimg="1"
-                                src='/profile_hero.png'
+                                src='/profile_hero.webp'
                                 loading='lazy'
                                 alt='JalexCode Picture'
                                 className={twMerge(`w-full transition-transform ease-in-out duration-500
