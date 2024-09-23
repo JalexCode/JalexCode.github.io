@@ -62,8 +62,8 @@ const projects: Array<Project> = [
             '/images/mao/2.png',
             '/images/mao/3.png',
         ],
-        // prodUrl: [
-        //     {name: 'Website', url: 'https://github.com/JalexCode/mao-consulting'}]
+        prodUrl: [
+            {name: 'Website', url: 'https://panel.maoconsulting.es/login'}]
     },
     {
         name: 'Visuales UCLV Explorer',

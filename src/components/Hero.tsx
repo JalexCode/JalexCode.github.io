@@ -6,17 +6,18 @@ import { TypeAnimation } from 'react-type-animation';
 import { Fade, Slide } from "react-awesome-reveal";
 import { useEffect, useState } from 'react';
 import { twMerge } from 'tailwind-merge';
+import { ResumeButtons } from './ResumeButtons';
 
 const Hero = () => {
     const [hasAnimated, setHasAnimated] = useState(false);
     useEffect(() => {
-        if (!hasAnimated){
+        if (!hasAnimated) {
             setTimeout(() => {
                 setHasAnimated(true)
             }, 1000);
         }
     }, [hasAnimated])
-    
+
     return (
         <section id="aboutme" className='bg-indigo-600 dark:bg-slate-800 sssm:pt-32 ssm:pt-28 lg:pt-36 sssm:pb-0
         lg:px-0 md:px-0 sm:px-10 ssm:px-10 sssm:px-10'>
@@ -54,8 +55,9 @@ const Hero = () => {
                                     <p className='text-2xl text-slate-300'>
                                         {personalInfo.aboutMe}
                                     </p>
-                                    <div id='sociallinks' className='mt-10 mb-4'>
+                                    <div id='sociallinks' className='flex flex-col mt-10 mb-4 justify-start items-start space-y-4'>
                                         <SocialLinks />
+                                        {/* <ResumeButtons /> */}
                                     </div>
                                 </div>
                             </div>
@@ -82,7 +84,7 @@ const Hero = () => {
                                 alt='JalexCode Picture'
                                 className={twMerge(`absolute inset-0 w-full object-cover transition-transform ease-in-out duration-500
                                 lg:translate-y-0 ssm:translate-y-4 sssm:-translate-y-2`, hasAnimated && 'scale-[102%]')}
-                                style={{ transitionTimingFunction: 'cubic-bezier(0.175, 0.885, 0.32, 1.275)'}}
+                                style={{ transitionTimingFunction: 'cubic-bezier(0.175, 0.885, 0.32, 1.275)' }}
                             />
                             <img
                                 decoding="async"
