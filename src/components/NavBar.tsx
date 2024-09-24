@@ -9,11 +9,12 @@ import { personalInfo } from '../data/personalInfo';
 interface Sections {
   title: string,
   id: string,
+  invisible?: boolean
 }
 
 const NavBar = () => {
   const items: Array<Sections> = [
-    { title: "About Me", id: "aboutme" },
+    { title: "About Me", id: "aboutme", invisible: true },
     { title: "Skills", id: "skills" },
     { title: "Projects", id: "projects" },
     { title: "Experience", id: "experience" },
@@ -47,11 +48,15 @@ const NavBar = () => {
           <div>
             <div className='flex lg:space-x-4 md:space-x-4'>
               <div className="flex flex-row space-x-4 sssm:hidden ssm:hidden sm:hidden md:flex lg:flex">
-              <div className='hidden lg:block md:block'>
-              <ResumeButtons downloadUrl={personalInfo.resumeUrl}/>
-              </div>
+                <div className='hidden lg:block md:block'>
+                  <ResumeButtons downloadUrl={personalInfo.resumeUrl} />
+                </div>
                 {items.map((element: Sections, index) => (
-                  <a key={index} className="menu-item" onClick={() => scrollToSection(element.id)}>{element.title}</a>
+                  !element.invisible ? (
+                    <a key={index} className="menu-item" onClick={() => scrollToSection(element.id)}>
+                      {element.title}
+                    </a>
+                  ) : null
                 ))}
               </div>
               {!isDarkMode ? <MdNightlight size={30} className="navbar-items-icon" onClick={() => toggleDarkMode()} /> :
