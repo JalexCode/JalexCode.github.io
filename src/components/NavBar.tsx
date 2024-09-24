@@ -4,6 +4,8 @@ import { useState } from 'react';
 import { MdNightlight, MdLightMode } from "react-icons/md";
 import { HiMenuAlt1 } from "react-icons/hi";
 import { useDarkMode } from '../context/DarkModeContext';
+import { ResumeButtons } from './ResumeButtons';
+import { personalInfo } from '../data/personalInfo';
 interface Sections {
   title: string,
   id: string,
@@ -44,7 +46,10 @@ const NavBar = () => {
           {/* Menu Bar */}
           <div>
             <div className='flex lg:space-x-4 md:space-x-4'>
-              <div className="flex flex-wrap space-x-4 sssm:hidden ssm:hidden sm:hidden md:block lg:block">
+              <div className="flex flex-row space-x-4 sssm:hidden ssm:hidden sm:hidden md:flex lg:flex">
+              <div className='hidden lg:block md:block'>
+              <ResumeButtons downloadUrl={personalInfo.resumeUrl}/>
+              </div>
                 {items.map((element: Sections, index) => (
                   <a key={index} className="menu-item" onClick={() => scrollToSection(element.id)}>{element.title}</a>
                 ))}

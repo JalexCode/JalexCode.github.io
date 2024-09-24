@@ -52,12 +52,14 @@ const Hero = () => {
                                 <hr className='lg:block md:block sm:hidden ssm:hidden sssm:hidden' />
                                 <div id='whoami' className='sssm:mt-4 ssm:mt-4 md:mt-10 lg:mt-10'>
 
-                                    <p className='text-2xl text-slate-300'>
+                                    <p className='text-2xl text-slate-300 text-justify lg:text-start md:text-start'>
                                         {personalInfo.aboutMe}
                                     </p>
-                                    <div id='sociallinks' className='flex flex-col mt-10 mb-4 justify-start items-start space-y-4'>
+                                    <div id='sociallinks' className='flex flex-col mt-10 mb-4 justify-start items-center lg:items-start md:items-start space-y-4'>
                                         <SocialLinks />
-                                        {/* <ResumeButtons /> */}
+                                    </div>
+                                    <div  className='lg:hidden md:hidden sm:flex ssm:flex sssm:flex flex-col mt-10 mb-4 justify-center items-center lg:items-start md:items-start space-y-4'>
+                                        <ResumeButtons downloadUrl={personalInfo.resumeUrl}/>
                                     </div>
                                 </div>
                             </div>

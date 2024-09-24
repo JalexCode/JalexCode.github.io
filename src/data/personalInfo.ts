@@ -1,6 +1,6 @@
 import { IconType } from 'react-icons';
 import { BsFacebook, BsInstagram, BsTelegram, BsGithub, BsLinkedin, BsEnvelopeAtFill } from 'react-icons/bs'
-import { IoBriefcase } from "react-icons/io5";
+// import { IoBriefcase } from "react-icons/io5";
 
 export interface SocialLinksType {
     icon: IconType
@@ -13,6 +13,7 @@ export interface PersonalInfoProps {
     name: string;
     nick: string;
     heroPic: string;
+    resumeUrl: string;
 }
 
 export const personalInfo:PersonalInfoProps = {
@@ -20,6 +21,8 @@ export const personalInfo:PersonalInfoProps = {
     name: "Javier Alejandro",
     nick: "JalexCode",
     heroPic: "/avatar.jpg",
+    resumeUrl: "https://drive.usercontent.google.com/u/0/uc?id=1AZqDKFdC-figeeyp8mlRG4jf9JYrdoL2&export=download"
+    // resumeUrl: "https://drive.google.com/file/d/1AZqDKFdC-figeeyp8mlRG4jf9JYrdoL2/view?usp=sharing"
 };
 
 export const socialLinks: Array<SocialLinksType> = [
@@ -53,9 +56,9 @@ export const socialLinks: Array<SocialLinksType> = [
         title: 'Send me an email',
         url: 'mailto:javierglez9910@gmail.com',
     },
-    {
-        icon: IoBriefcase,
-        title: 'Get my resume',
-        url: 'https://rxresu.me/javierglez9910/imported-from-linkedin-26062023032246',
-    },
+    // {
+    //     icon: IoBriefcase,
+    //     title: 'Get my resume',
+    //     url: 'https://rxresu.me/javierglez9910/imported-from-linkedin-26062023032246',
+    // },
 ];
