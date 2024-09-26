@@ -70,7 +70,7 @@ const Hero = () => {
                                 loop={false}
                                 autoplay={true}
                                 animationData={reactAnimation}
-                                className='opacity-10'
+                                className='dark:opacity-[10%] opacity-[30%]'
                             />
                         </div>
                         {/* My picture */}

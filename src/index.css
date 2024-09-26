@@ -75,7 +75,7 @@ hr {
 }
 
 .sections-title {
-    @apply lg:text-9xl md:text-9xl text-5xl font-bold lg:text-start md:text-start text-center
+    @apply lg:text-9xl md:text-9xl text-5xl font-bold lg:text-start md:text-start text-center dark:opacity-[20%] opacity-[70%]
 }
 
 @keyframes fadeInUp {
